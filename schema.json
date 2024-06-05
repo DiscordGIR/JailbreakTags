@@ -30,6 +30,10 @@
           "minItems": 0,
           "maxItems": 5
         }
+      },
+      "image": {
+        "type": "string",
+        "description": "The URL of the image related to the tag."
       }
     },
     "required": [
