@@ -1,0 +1,34 @@
+[
+  {
+    "name": "roblox",
+    "content": "This Discord server is for iOS jailbreaking, not Roblox. Please keep your discussions on-topic, thank you!"
+  },
+  {
+    "name": "unsigned",
+    "content": "When an iOS version is **unsigned**, that means you can no longer downgrade, nor upgrade, nor re-restore to that version. If you are currently on that version, nothing changes for you. **This does not mean you can jailbreak that version, nor does this mean a jailbreak is coming soon for that version.**\n\nWith that being said, futurerestore allows you to downgrade/upgrade/re-restore to unsigned versions, but you must meet certain requirements in order to use it. For more information, see `/tag canidowngrade` and `/tag futurerestore`.\n\nAlso, note that you can **upgrade** (not downgrade) to unsigned versions up to 90 days after the succeeding version has been released, if your device meets certain requirements. For more information on these requirements, see /tag otadelay."
+  },
+  {
+    "name": "blobsfaq",
+    "content": "**What's a blob?**\nThey're like golden tickets, but instead a digital signature made by Apple that was saved at the time when the signing window was open. If you possess one (or many), keep them safe.\n\n**How do they work?**\nThey can be used in a program called futurerestore to restore to a firmware in which the SEP/Baseband is compatible. To check SEP/Baseband compatibility, check `/tag sepbb`.\n\nMake sure to not use misleading sites. Stick to reputable sites like [ios.cfw.guide](https://ios.cfw.guide) and [AppleDB](https://appledb.dev).\n\nRegardless of SEP/Baseband compatibility, any/all blobs should be saved for future downgrading abilities.\n\n**Can I use other people’s blobs?**\nNo. Blobs are a file containing a special key specifically for that **one device** to allow downgrading to a specific firmware. Due to the way they work, only Apple can create them for your own device.\n\n**Can I save them now?**\nIn general, yes. Blobs can be saved at any time, but it is crucial to save them when Apple releases new firmware, because they can only be saved for versions that are currently signed. There is one exception to this: if you are jailbroken and Apple has unsigned the version you're currently on, you may save onboard blobs for that version.",
+    "button_links": [
+      { 
+        "label": "<:Link:947344383454367774> Simpler explanation (Alice & Bob)",
+        "url": "https://gist.github.com/nikoyeah1/9fcf4b2f18494d3974777635f4fed60a"
+       },
+      { 
+        "label": "<:Guide:947350624385794079> Downgrade/dual boot status of all iOS devices",
+        "url": "https://gist.github.com/9d781f1b03a69fa46869384a9407a41a"
+       }
+    ]
+  },
+  {
+    "name": "dfu",
+    "content": "DFU (Device Firmware Upgrade) mode is a mode which allows a device in any condition to be restored to a fresh version of iOS (not to be confused with Recovery Mode). This can also be used to jailbreak using checkra1n and palera1n!\n\nFor how to restore in DFU mode, see `/tag dfurestore`",
+    "button_links": [
+      { 
+       "label": "<:Guide:947350624385794079> How to enter DFU mode",
+        "url": "https://www.theapplewiki.com/wiki/DFU_Mode#Entering_DFU_Mode"
+       }
+    ]
+  }
+]
