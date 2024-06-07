@@ -16,3 +16,26 @@ jobs:
         env:
           INPUT_SCHEMA: ./schema.json
           INPUT_JSONS: ./tags.json
+  check-json-format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install jq and jsonlint
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y jq
+        npm install -g jsonlint
+
+    - name: Find JSON files and check format
+      run: |
+          # Format JSON file and compare with original
+          jq . tags.json > formatted.json
+          diff -u tags.json formatted.json || (echo "JSON formatting error in tags.json" && exit 1)
+          # Validate JSON file
+          jsonlint tags.json -q || (echo "JSON validation error in tags.json" && exit 1)
+
+    - name: Clean up
+      run: rm -f formatted.json
