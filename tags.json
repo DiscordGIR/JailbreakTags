@@ -11,24 +11,1016 @@
     "name": "blobsfaq",
     "content": "**What's a blob?**\nThey're like golden tickets, but instead a digital signature made by Apple that was saved at the time when the signing window was open. If you possess one (or many), keep them safe.\n\n**How do they work?**\nThey can be used in a program called futurerestore to restore to a firmware in which the SEP/Baseband is compatible. To check SEP/Baseband compatibility, check `/tag sepbb`.\n\nMake sure to not use misleading sites. Stick to reputable sites like [ios.cfw.guide](https://ios.cfw.guide) and [AppleDB](https://appledb.dev).\n\nRegardless of SEP/Baseband compatibility, any/all blobs should be saved for future downgrading abilities.\n\n**Can I use other people’s blobs?**\nNo. Blobs are a file containing a special key specifically for that **one device** to allow downgrading to a specific firmware. Due to the way they work, only Apple can create them for your own device.\n\n**Can I save them now?**\nIn general, yes. Blobs can be saved at any time, but it is crucial to save them when Apple releases new firmware, because they can only be saved for versions that are currently signed. There is one exception to this: if you are jailbroken and Apple has unsigned the version you're currently on, you may save onboard blobs for that version.",
     "button_links": [
-      { 
+      {
         "label": "<:Link:947344383454367774> Simpler explanation (Alice & Bob)",
         "url": "https://gist.github.com/nikoyeah1/9fcf4b2f18494d3974777635f4fed60a"
-       },
-      { 
+      },
+      {
         "label": "<:Guide:947350624385794079> Downgrade/dual boot status of all iOS devices",
         "url": "https://gist.github.com/9d781f1b03a69fa46869384a9407a41a"
-       }
+      }
     ]
   },
   {
     "name": "dfu",
     "content": "DFU (Device Firmware Upgrade) mode is a mode which allows a device in any condition to be restored to a fresh version of iOS (not to be confused with Recovery Mode). This can also be used to jailbreak using checkra1n and palera1n!\n\nFor how to restore in DFU mode, see `/tag dfurestore`",
     "button_links": [
-      { 
-       "label": "<:Guide:947350624385794079> How to enter DFU mode",
+      {
+        "label": "<:Guide:947350624385794079> How to enter DFU mode",
         "url": "https://www.theapplewiki.com/wiki/DFU_Mode#Entering_DFU_Mode"
-       }
+      }
+    ]
+  },
+  {
+    "name": "chart",
+    "content": "Here are the charts for lists of jailbreak tools and their supported iOS versions, if you’re still not sure on what your device supports please see below this message.\n\nYou can do `/canijailbreak <device> <version>` to see what your device supports currently.\n\nYou can also do `/jailbreak <jailbreak name>` for more info on a specific jailbreak.",
+    "button_links": [
+      {
+        "label": "<:Search2:947525874297757706> Device Chart",
+        "url": "https://appledb.dev/device-selection"
+      },
+      {
+        "label": "<:Search2:947525874297757706> Jailbreak Chart",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRXcZDsbk2j_AL5YCPnwAp6Ovf5xmLRwNK2wXrwGN__FCbkGWz6Be4l5JyHxEOyogjPnVl51nrDVOcC/pubhtml"
+      }
+    ]
+  },
+  {
+    "name": "itunesicloud",
+    "content": "Download links for [iCloud](http://updates-http.cdn-apple.com/2020/windows/061-95246-20200518-8BC0437C-9923-11EA-981C-47481553BE55/iCloudSetup.exe) and [the latest version of iTunes](https://www.apple.com/itunes/download/win64)\n\n[Older versions of iTunes for Windows and macOS can be found here](https://ipsw.me/iTunes)\n\n**Do *not* install the Windows 10+ version of iTunes from the Microsoft Store if you need it for AltStore or other similar programs!**"
+  },
+  {
+    "name": "guide",
+    "content": "[Complete guide to iOS and tvOS modification, from stock to jailbroken](https://ios.cfw.guide)"
+  },
+  {
+    "name": "adddevice",
+    "content": "`/device add <devicename> <iOS version>`.\nFor example: `/device add iPhone 12 Pro 14.3`.\nHint: follow the autocomplete UI!\n\nRemove the nickname with `/device remove`."
+  },
+  {
+    "name": "odysseyn1x",
+    "content": "Odysseyn1x allows you to use checkra1n and Odysseyra1n on Windows computers via live-booting. You will need a USB flash drive or SD card for this.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Odysseyn1x Tutorial",
+        "url": "https://ios.cfw.guide/using-odysseyn1x"
+      },
+      {
+        "label": "<:Link:947344383454367774> Removing Ventoy",
+        "url": "https://discord.com/channels/349243932447604736/688122301975363591/900122819747262534"
+      }
+    ]
+  },
+  {
+    "name": "yt",
+    "content": "YouTube is typically a very poor source of information and should be avoided. Many jailbreak YouTubers promote piracy, outdated tweaks, or just flat out fake jailbreaks. Reliable sources: [iOS Guide](https://ios.cfw.guide/), [r/jailbreak Wiki](https://old.reddit.com/r/jailbreak/wiki/index), [Apple Database](https://appledb.dev) and [The Apple Wiki](https://www.theapplewiki.com/)."
+  },
+  {
+    "name": "piracy",
+    "content": "**What is piracy?**\nPiracy is a form of unauthorized redistribution such as getting apps, in-app purchases, tweaks or themes without paying for them. This is often also unsafe as you are not getting things from the official source and pirated versions could have malware.\n\n**How do I know if I have piracy?**\nAdd the [iSecureOS Repo](https://isecureos.idevicecentral.com/repo), download iSecureOS, and run a scan.\nIf you are still not sure if it is piracy or not, you can send the name of the source in to a genius, mod or admin in a DM and ask for further information. If you send a piracy link in a channel you will be filtered and informed further via DM. Doing so may also result in a warning from a member of staff. Use DMs to avoid the possibility.\nDo note however that sharing piracy in DMs for any other purpose than asking if it's safe is still a violation of the rules and is warnable.\n\n**I have piracy repos and/or pirated tweaks, what should I do?**\nThe standard procedure here is to restore RootFS (which is called \"restore system\" on checkra1n). To learn more, type `/tag rootfs`."
+  },
+  {
+    "name": "blockota",
+    "content": "To block OTA updates, you can install a modified tvOS beta profile. This works even without a jailbreak. Note that the profile expires and will stop blocking updates on <t:1738299600:D> (<t:1738299600:R>).\n\nYou can re-enable updates by uninstalling this profile in Settings -> General -> Profiles & Device Management.\n\nIf you're jailbroken, you can also install the OTADisabler tweak instead, but note that it is harder to remove while unjailbroken.",
+    "button_links": [
+      {
+        "label": "<:Settings2:947377635393163274> Install Profile",
+        "url": "https://f.itsnebula.net/noota-17.mobileconfig"
+      },
+      {
+        "label": "<:Add:947354227171262534> Add OTADisabler Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://cydia.ichitaso.com/"
+      }
+    ]
+  },
+  {
+    "name": "blobs",
+    "content": "[How to use blobs (aka how to Future Restore)](https://ios.cfw.guide/futurerestore)\n\nIf you're using a Procursus jailbreak your blobs are automatically saved weekly and can be found [here](https://tsssaver.1conan.com/v2/) or by running `sudo shshd` in a terminal.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> How to save blobs",
+        "url": "https://ios.cfw.guide/saving-blobs"
+      },
+      {
+        "label": "<:Guide:947350624385794079> How to save blobs (No PC or jailbreak)",
+        "url": "https://coocoofroggy.github.io/TSwapS-FAQ/tswaps"
+      }
+    ]
+  },
+  {
+    "name": "ibec",
+    "content": "__Fix for error code 3, 8, and 10 aka the iBEC error in futurerestore__\n1. Uninstall all apple drivers via device manager.\n2. Uninstall all apple products including itunes and apple device support stuff via control panel uninstall a program. **MAKE SURE TO CHECK UNINSTALL DRIVER WHEN UNINSTALLING**\n3. Unplug and replug device.\n4. Check device manager for more apple stuff and uninstall if so with same driver checkbox.\n5. Disconnect device.\n6. Install itunes64 exe from apple.com itself, no windows store bullshit. This is the best version: https://support.apple.com/kb/DL1816?locale=en_US (It will be labeled windows 7, 8 but install it on windows 10, it works fine)\n7. Plug in device in recovery.\n8. iboot (recovery) driver should show up under usb in device manager. Uninstall it and check the with software box.\n9. Run futurerestore.\n10. Unplug and replug your device.\n11. Run futurerestore again"
+  },
+  {
+    "name": "reboot",
+    "content": "This will **force reboot** the device. For normal rebooting instructions, see the `normalreboot` tag.\n\n**iPhone 8 or newer (including all notched devices, iPhone SE 2020 and newer):**\n- Press and release volume up\n- Press and release volume down\n- Press and hold the side button for 10-20 seconds until the Apple logo appears\n\n**iPhone 7:**\n- Press and hold the volume down and power buttons for 10-20 seconds until the Apple logo appears\n\n**iPhone 6S/SE 2016/iPad 8th or older:**\n- Press and hold the home and power buttons for 10-20 seconds until the Apple logo appears"
+  },
+  {
+    "name": "checkra1ncli",
+    "content": "To use checkra1n in CLI mode, type the following command into a Terminal window.\n\n**macOS:**\n`/Applications/checkra1n.app/Contents/MacOS/checkra1n -c`\n\n**Linux:**\n`sudo checkra1n -c`\n\n**checkn1x:**\nPress Alt-F3.\n\n**odysseyn1x:**\nSelect “Shell” then type `checkra1n -c`.\n\nOnce checkra1n CLI is running, connect your phone to your computer and place your phone in [DFU mode](https://www.theiphonewiki.com/wiki/DFU_Mode#Entering_DFU_Mode).\n\nTo enable safe mode, run `checkra1n -cs`."
+  },
+  {
+    "name": "tweaklist",
+    "content": "**Sileo / Zebra / Installer**\nSelect the Packages or Installed tab and then tap Share/Export at the top. \n\n**Cydia**\nInstall __Obsidian__ and then follow the steps above. \n\nIf you're being asked to upload your tweak list, copy the text [here](https://dpaste.com/) and send the link in chat.",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add Obsidian Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://repo.pixelomer.com"
+      }
+    ]
+  },
+  {
+    "name": "altstorecrash",
+    "content": "You may be experiencing AltStore crashing on iOS 13.3.1, this is a known issue with AltStore and there’s a fix available for you to use!\n\nAlternatively, you can use [Sideloadly](https://sideloadly.io) instead.\n\nIt's recommended to use either Odyssey or unc0ver 5.3.1. You may encounter issues with unc0ver 8.x on iOS 13.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Fix for AltStore crashing on iOS 13.3.1",
+        "url": "https://www.reddit.com/r/jailbreak/comments/m8fgdn/guide_fix_altstore_crashing_on_1331_updated_once/"
+      }
+    ]
+  },
+  {
+    "name": "fwjson",
+    "content": "Download this file from a browser: https://api.ipsw.me/v2.1/firmwares.json/condensed (right-click, Save as), rename it from condensed.json to firmwares.json, then put it in `C:\\Users\\USERNAME\\AppData\\Local\\Temp\\` (Windows) or `/tmp/futurerestore/` (macOS/Linux).\nBy: Tanbeer#4750"
+  },
+  {
+    "name": "libimobiledevice",
+    "content": "Up to date libimobiledevice builds:\n\n* Windows: https://github.com/L1ghtmann/libimobiledevice/releases/download/suite-exe-074b320/libimobile-suite-latest_x86_64-mingw64.tar.xz\n* macOS: `brew install libimobiledevice libirecovery`\n* Linux: https://cadoth.net/~nyuszika7h/ios-builds/libimobiledevice-static-linux.tar.gz"
+  },
+  {
+    "name": "enableota",
+    "content": "To re-enable OTA updates, install __OTAEnabler__ \n\nIf you're on an unjailbreakable version, you'll have to erase your device and set up as new or use a backup that was taken before jailbreaking.",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add OTAEnabler Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://repo.cadoth.net"
+      }
+    ]
+  },
+  {
+    "name": "rootfs",
+    "content": "To revert the jailbreak installation on your device, follow the steps below.\n\n**palera1n**\nRootful: `palera1n --force-revert -f `\nRootless(default): `palera1n --force-revert`\n\nIf the above methods didn't work, see `/tag rootfscli` for more options.\n\n**Dopamine** \nReboot, open Dopamine, open the Settings page, then press \"Remove Jailbreak\"\n\n**Note**: Since the rootfs is sealed on iOS 15+, it remains the same across all devices. Thus, \"Restore rootfs\" means practically the same thing as \"Remove Jailbreak\""
+  },
+  {
+    "name": "successionbeta",
+    "content": "You can get the beta version of Succession for iOS 14 here:\n\nThis should only be used as a last resort, since it's no longer maintained. Usually you can restore rootfs and then erase all contents and settings to achieve the same effect.\n\n**Warning**\nPlease do __NOT__ use this tool if you’re using Fugu14, when restoring it misses a directory provided by Fugu14 making you not able to Jailbreak using it again.",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add Succession Beta Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://samgisaninja.github.io/test/"
+      }
+    ]
+  },
+  {
+    "name": "nopc",
+    "content": "You can install jailbreaks directly on your device with TrollStore (see !t trollstore). TrollStore will keep your app working forever, you do not need to worry about revokes ever again. \n\nIf you are on <=iOS 13 you’ll have to use https://jailbreaks.app/. Note that certs are revoked very often, so it is advised to install __ReProvision Reborn__ once you're jailbroken to keep your jailbreak signed.\n\nIf you have absolutely no access to a computer be aware in rare circumstances (almost always user error) it is possible to get stuck in a boot loop or similar which requires one to restore.\n\nCheckra1n and palera1n do not and will never work without a computer.",
+    "button_links": [
+      {
+        "label": "<:jbapp:947578224622313522> Jailbreaks.app Signing Status",
+        "url": "https://api.jailbreaks.app/status"
+      },
+      {
+        "label": "<:Add:947354227171262534> Add Reprovision Reborn Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://havoc.app"
+      }
+    ]
+  },
+  {
+    "name": "nosep",
+    "content": "When using checkra1n/palera1n on the iPhone 8/X running iOS 14 or later, you will not be able to use any of the following SEP features in a jailbroken state:\n- Passcode\n- Touch ID/Face ID\n- Apple Pay\n\nAdditionally, if you’ve ever enabled a Passcode on iOS 16 on the iPhone 8/X, you’ll need to erase all content and settings in order to successfully jailbreak with palera1n."
+  },
+  {
+    "name": "bypass",
+    "content": "When jailbroken, apps can detect if your device has been jailbroken or jailbroken in the past, making you not able to open / not even use the application.\n\nYou can use certain bypasses to get passed these restrictions and use the app normally.\n\nSubmit a new bypass [here](https://forms.gle/jVTZnsaGQ7CtH7LT9) or [open a GitHub issue](https://github.com/hekatos/manifests/issues/new?assignees=&labels=request&template=request.yml&title=%5BRequest%5D%3A+).\n\nUse __Apps Manager__ to reset the app before testing a new bypass tweak.\n\n**Please note that this list has not been maintained since the last iOS 14 jailbreak due to the advent of rootless jailbreaks, a lack of testers with test devices and maintainers.** (Previously maintained by <@419610859392860162>)",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> View full list of jailbreak bypasses",
+        "url": "https://hekatos.github.io/#/"
+      },
+      {
+        "label": "<:Add:947354227171262534> Add Apps Manager Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=http://apt.thebigboss.org/repofiles/cydia"
+      }
+    ]
+  },
+  {
+    "name": "icloudbypass",
+    "content": "Discussion of iCloud/Activation Lock/passcode/MDM (Mobile Device Management) bypass, asking how to do it, or posting about it is **not allowed**. No, it doesn't matter if the phone is yours or not. We will not help you with it. If you *do* own it, it’s recommended to use the links below.\n\n[If you forgot your Apple ID - Apple Support](https://support.apple.com/en-us/HT201354)\n\n[If you forgot your Apple ID password - Apple Support](https://support.apple.com/en-us/HT201487)\n\n[How to remove Activation Lock - Apple Support](https://support.apple.com/en-us/HT201441)\n\n[If you forgot the passcode on your iPhone, or your iPhone is disabled - Apple Support](https://support.apple.com/en-us/HT204306)"
+  },
+  {
+    "name": "rootfscli",
+    "content": "If you're unable to restore rootfs the normal way, you can do it from a terminal (e.g. NewTerm or SSH).\n\nIf your device terminal prompts you a password, its gonna be `alpine`\n\n**unc0ver**\nInstall Snappy from your package manager, then open a terminal and type `su root -c 'snappy -o'`, then reboot.\n\n**Odyssey / Taurine**\nOpen a terminal and type these commands:\n```\nsudo snaputil -n orig-fs $(snaputil -o) /\n```\n\n**checkra1n / odysseyra1n**\nOpen a terminal and type `su root -c '/binpack/usr/bin/snappy -o'`, then reboot.\n\nWith checkra1n 0.12.3 or above, you can also restore rootfs from your computer:\n* macOS: `/Applications/checkra1n.app/Contents/MacOS/checkra1n --force-revert`\n* Linux: `sudo checkra1n --force-revert`\n* Odysseyn1x: Go to Shell and type `checkra1n --force-revert`"
+  },
+  {
+    "name": "jbtypes",
+    "content": "Types of jailbreaks:\n\n**Tethered**\nThe device must be booted using a computer every time, otherwise it won't boot at all. This type of jailbreak is uncommon. (e.g.: redsn0w, 4039)\n\n**Semi-tethered**\nThe device must be jailbroken using a computer every time it's rebooted, otherwise it will boot in unjailbroken state. (e.g.: checkra1n, palera1n)\n\n**Semi-untethered**\nThe device must be jailbroken using an app every time it's rebooted, otherwise it will boot in unjailbroken state. A computer is usually used for the initial installation, but it's not strictly necessary. (e.g.: unc0ver, Odyssey, Taurine)\n\n**Untethered**\nThe device will stay jailbroken after a reboot, no additional action is required. This type of jailbreak is uncommon. (e.g.: Pangu9, Fugu14)"
+  },
+  {
+    "name": "delayota",
+    "content": "DelayOTA is a process of upgrading to versions for up to 90 days after a new version is released. With Dahlia you can extend this period for a few more days. \n\nDelayOTA is mainly used for companies to upgrade to versions more later than usual, these guides just help normal users achieve the same thing. \n\n**Note**\n- You cannot downgrade using DelayOTA\n- You can find what DelayOTA versions are available [here](https://dhinakg.github.io/delayed-otas.html)\n- This won't work if you futurerestored with a SEP that's newer than the version you're trying to go to.\n- This won’t work for betas!",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> DelayOTA (Jailbroken)",
+        "url": "https://ios.cfw.guide/updating-blobless"
+      },
+      {
+        "label": "<:Guide:947350624385794079> DelayOTA (No Jailbreak)",
+        "url": "https://ios.cfw.guide/updating-blobless-advanced"
+      }
+    ]
+  },
+  {
+    "name": "whyjbtv",
+    "content": "Why jailbreak an Apple TV?\n\nTweaks and features such as:\n\n**AirMagic** - Control your Apple TV via any web browser.\n**DalesDeadBug** - Spoof your firmware version.\n**AppStore++** - Downgrade Apple TV apps from the AppStore. \n**nControl** - Use other controllers for your Apple TV.\n**TVControlCenter** - Install control center tweaks for ease of access. (13+ only)\n**Breezy** - AirDrop files to and from your Apple TV from any device.\n**SnowBoardTV** - Decorate your Apple TV homescreen with awesome themes!\n**Doom & Quake** - Play the classics from your childhood right on the big screen!\n\nemulators, multimedia, code execution, custom respring animations/wallpapers/ screensavers and so much more!"
+  },
+  {
+    "name": "futurerestore",
+    "content": "Futurerestore allows you to upgrade/downgrade/restore to unsigned iOS versions if you meet certain requirements.\n\n**Links:**\n[FutureRestore GUI](https://github.com/CoocooFroggy/FutureRestore-GUI/releases)\n[Latest Nightly(Windows)](https://cdn.cryptiiiic.com/bin/Windows/x86_64/futurerestore/futurerestore-Windows-x86_64-v2.0.0-Build_309-RELEASE.exe)\n[Latest Nightly(Linux/Mac)](https://nightly.link/futurerestore/futurerestore/workflows/ci/main)(use RELEASE builds unless told otherwise)\n\n**Tutorials:**\n[Tutorial](https://ios.cfw.guide/futurerestore/)"
+  },
+  {
+    "name": "support",
+    "content": "Please keep support or jailbreak related messages in <#688122301975363591>, thank you!",
+    "button_links": [
+      {
+        "label": "<:Genius:947545923028922448> Genius Bar",
+        "url": "https://discord.com/channels/349243932447604736/969343289641828382"
+      },
+      {
+        "label": "<:Channel2:947546361715388417> Jailbreak Channel",
+        "url": "https://discord.com/channels/349243932447604736/688122301975363591"
+      }
+    ]
+  },
+  {
+    "name": "snapchat",
+    "content": "We don't offer help with modding or tweaking Snapchat as it will almost always result in a ban. If you want to take the risk, go ahead, but don't say we didn't warn you.\n\n**How to avoid a ban**\nInstall Choicy (checkra1n/unc0ver) or Libhooker Configurator (Chimera/Odyssey(ra1n)/Taurine) and disable tweak injection in the Snapchat app.\n\nDo not use any tweaks such as location spoofers or downgrade the app. Snapchat will notice this and ban you.\n\n**How do Snapchat bans work?**\nTypically it is 24 hours, then your next ban is 48 hours, a week and then permanent.",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add Choicy Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://opa334.github.io"
+      }
+    ]
+  },
+  {
+    "name": "snapshort",
+    "content": "To save multiple instances of icon placement, xen html widgets, themes, tweak settings use the shortcut below.\n\nSSH Toggle and Port is required as well. It can be installed from the [BigBoss Repo](https://sharerepo.stkc.win/?repo=http://apt.thebigboss.org/repofiles/cydia).",
+    "button_links": [
+      {
+        "label": "<:Settings2:947377635393163274> Snap Short Shortcut",
+        "url": "https://www.icloud.com/shortcuts/efcf58e1111c41b0a880a7c080f875a3"
+      },
+      {
+        "label": "<:Guide:947350624385794079> Fix Untrusted Shortcut",
+        "url": "https://www.howtogeek.com/699397/how-to-fix-allow-untrusted-shortcuts-grayed-out-on-iphone-or-ipad/#:~:text=Normally%2C%20when%20you%20want%20to,switch%20under%20%E2%80%9CSharing%20Security.%E2%80%9D"
+      }
+    ]
+  },
+  {
+    "name": "taurineerrors",
+    "content": "`ERR_JAILBREAK` - Taurine does not support migration, and you have another jailbreak installed. Restore RootFS first then attempt to jailbreak.\n\n`ERR_ALREADY_JAILBROKEN` - Reboot your device and try again.\n\n`ERR_TFP0` / `ERR_KERNRW` - Exploiting the device failed, try again."
+  },
+  {
+    "name": "recovery",
+    "content": "Recovery Mode (not to be confused with DFU Mode) is a mode which allows a device to be reflashed to a fresh install of iOS. You can optionally either keep your data and update to a newer version or restore and start over with a fresh install. \n\n**To restore in Recovery Mode**\n- [Enter Recovery Mode](https://support.apple.com/en-us/HT201263)\n- Connect your device to your PC/Mac and open iTunes/Finder\n- A prompt should appear which says “A device has been connected in recovery mode.” Either select “Restore” or “Update”\n\n**NOTE:** If you use this method you can only restore/updated to a signed version of iOS."
+  },
+  {
+    "name": "sepbb",
+    "content": "Currently you can restore to the following versions with the latest SEP, baseband, and U1 (if on A13 or newer non-SE iPhone's) for your device: (someone correct this its still worded like the old tag is still here)\n\nFor restores on devices that support iOS 15 and Wi-Fi only iPads, you currently must use the latest beta version of FutureRestore, see `/tag futurerestore` for a link.",
+    "button_links": [
+      {
+        "label": "<:Spreadsheet:947523112658948156> SEP/BB Compatibility Chart",
+        "url": "https://docs.google.com/spreadsheets/d/1Mb1UNm6g3yvdQD67M413GYSaJ4uoNhLgpkc7YKi3LBs/edit#gid=0"
+      },
+      {
+        "label": "<:Link:947344383454367774> Downgrade/Dualboot status of all devices",
+        "url": "https://gist.github.com/9d781f1b03a69fa46869384a9407a41a"
+      }
+    ]
+  },
+  {
+    "name": "autotss",
+    "content": "AutoTSS is a bot that will __automatically__ save blobs for your device! Follow what the bot prompts you when adding a device and you should be fine!\n\nThis bot only works if you use it in the bots channel.\n\n**Commands**\n`/devices add` | to add your device\n`/tss download` | to download the blobs\n`/help` | for more info about the other cmds\n\n**A11 and lower**\nAutoTSS will prompt you if you want to add a custom Generator and APNonce. Custom values are optional with these devices.\n\n**A12 and higher**\nYou __will__ need to set a custom Generator and Apnonce when adding these devices, please either use dimentio, NonceSet143 or [blobsaver](https://github.com/airsquared/blobsaver) to get them for AutoTSS. (This is also mentioned in the guide below!)\n\nOnce you've added your device to AutoTSS, it will auto save blobs for you!",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> AutoTSS Guide",
+        "url": "https://shouganai.gitbook.io/ios-stuff/blobs/autotss"
+      }
+    ]
+  },
+  {
+    "name": "checkra1nerrors",
+    "content": "**Error connecting to lockdownd**\nUnlock your idevice and trust the pc if a popup appears, then disconnect and reconnect the idevice.\n\n**iOS not supported or device not supported, but the [guide](https://ios.cfw.guide) says otherwise**\nMake sure you are using the latest version of checkra1n, and enable allow untested version in the options. A11 users on ios 14+ will also need to enable skip a11 bpr.\n\n**Stuck on checking for device, or device won't go info dfu?**\nMake sure you're using a [usb-a to lightning cable](https://discord.com/channels/349243932447604736/688126500834246709/875739728576655370) (as well as an adapter if needed). Use a pc with an intel cpu if possible, and don't use a VM."
+  },
+  {
+    "name": "dfurestore",
+    "content": "DFU (Device Firmware Upgrade) mode is a mode which allows a device in any condition to be restored to a fresh version of iOS (not to be confused with Recovery Mode). You cannot keep data when restoring via DFU and you can only restore to a signed version.\n\nTo restore via DFU:\n- Enter [DFU](https://www.theiphonewiki.com/wiki/DFU_Mode#Entering_DFU_Mode) Mode\n- Once you enter DFU, the device should show a black screen.\n- Connect the device to a Mac/PC and open Finder/iTunes.\n- On the prompt that says \"A device has been connected in recovery mode and needs to be restored\" press \"Restore iPhone\" then \"Restore and Update.”"
+  },
+  {
+    "name": "shortcut",
+    "content": "This is a shortcut that allows you to install Odysseyra1n on your device, make sure you __didn’t__ install Cydia from the loader before using this.",
+    "button_links": [
+      {
+        "label": "<:Settings2:947377635393163274> Odysseyra1n Shortcut",
+        "url": "https://www.icloud.com/shortcuts/7f7a3a8eb66142c986893e7dc6354a85"
+      },
+      {
+        "label": "<:Guide:947350624385794079> Fix Untrusted Shortcut",
+        "url": "https://www.howtogeek.com/699397/how-to-fix-allow-untrusted-shortcuts-grayed-out-on-iphone-or-ipad/#:~:text=Normally%2C%20when%20you%20want%20to,switch%20under%20%E2%80%9CSharing%20Security.%E2%80%9D"
+      }
+    ]
+  },
+  {
+    "name": "chimeramoment",
+    "content": "Chimera's success rate is poor and can take multiple attempts to successfully jailbreak, especially on older devices.\n\n**Chimera's success rate can be greatly improved on some devices by injecting the chimera_patch dylib.** The easiest way to accomplish this is by downloading the compiled .dylib file from the GitHub repo, and injecting it into the Chimera .ipa with Sideloadly by expanding the \"Advanced Options\" window and enabling the \"Inject dylibs/frameworks\" option. Then, proceed like normal.\n\nPlease note that, while chimera_patch is open source, it does modify the .ipa and thus can be considered an *unofficial* patch. If you are not comfortable with doing this, you may follow the steps listed below.\n\n**Tips to increase success rate**\n- Update to the latest Chimera version (ideally 1.6.5 or later)\n- Make sure the device is charged above 20%\n- Reboot after a failed attempt\n- Wait 60 seconds before jailbreaking after a reboot/failed attempt\n- Turn low power mode off\n- Put your device in front of an air conditioner or fan",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> chimera_patch download",
+        "url": "https://github.com/staturnzz/chimera_patch"
+      }
+    ]
+  },
+  {
+    "name": "sideloadly",
+    "content": "Sideloadly is a sideloading tool which allows you to sideload any app not available on the App Store (e.g., jailbreaks and emulators).\n\nSideloadly is available for macOS and Windows and can be downloaded [here](https://sideloadly.io/#download).",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Sideloadly Guide",
+        "url": "https://ios.cfw.guide/sideloading-apps"
+      }
+    ]
+  },
+  {
+    "name": "sideload",
+    "content": "**Windows:**\n[Sideloadly](https://sideloadly.io/)\n[AltStore](https://altstore.io/)\n*[zsign](https://github.com/zhlynn/zsign) + [ideviceinstaller](https://github.com/libimobiledevice-win32/imobiledevice-net/releases)\n\n**macOS:**\n[Sideloadly](https://sideloadly.io/)\n[AltStore](https://altstore.io/) \n*[zsign](https://github.com/zhlynn/zsign) + ideviceinstaller (`brew install libimobiledevice libirecovery`)\n\n**Linux:**\n[AltStore](https://github.com/NyaMisty/AltServer-Linux#usage)\n*[zsign](https://github.com/zhlynn/zsign) + [ideviceinstaller](https://cadoth.net/~nyuszika7h/ios-builds/libimobiledevice-static-linux.tar.gz)\n\n**Special:**\n\\*\\*\\*[SignTools](https://github.com/SignTools/SignTools)\n\n**On-device** (requires jailbreak):\n\\*\\*AltStore + [AltDaemon](https://chariz.com/get/altdaemon) (iOS 12.2+)\n[ReProvision Reborn](https://havoc.app/package/rpr) (iOS 9.0+)\n\n*: Requires paid dev cert.\n\\*\\*: For iOS 13.3.1, you currently have to use an older version (see `/tag altstorecrash`).\n\\*\\*\\*: For advanced users only. Setup may require a Mac in some instances.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Sideloadly Tutorial",
+        "url": "https://ios.cfw.guide/sideloading-apps/"
+      },
+      {
+        "label": "<:Guide:947350624385794079> AltStore Tutorial",
+        "url": "https://altstore.io/faq/"
+      }
+    ]
+  },
+  {
+    "name": "tvreboot",
+    "content": "**Apple TV 4/4K:**\n- Press and hold the Menu and TV buttons down on the remote for 5-7 seconds until the device rapidly flashes.\n\n**Apple TV 2 or 3:**\n- Press and hold Menu and Down for 5-7 seconds until the device rapidly flashes."
+  },
+  {
+    "name": "betaalert",
+    "content": "If you stay on an old iOS beta version (RC not included) for too long, after a few weeks you'll start seeing an alert like this every time you unlock your device or swipe away the notification center.\n\nIf you're jailbroken, you can use NoBetaAlert to disable it. Otherwise, the only way is to set your date back (which may break many apps and websites) or update.",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add NoBetaAlert Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://parrotgeek.com/repo/"
+      }
+    ]
+  },
+  {
+    "name": "usbcmoment",
+    "content": "**TLDR:** You'll need a USB-A to Lightning cable.\nUSB-C to USB-A adapters will work fine."
+  },
+  {
+    "name": "adblock",
+    "content": "We strongly advise against using jailbreak-specific adblockers for numerous reasons, ranging from inefficiency (how well they actually block ads) to downright incompetency (editing system files).\n\nThe following methods can be used on both stock and jailbroken devices.\n\n**AdGuard DNS**\nThis is the easiest method but provides no customizability.\n\niOS 14+ users should use the Adguard DNS Profile which works on cellular and Wi-Fi.\n\nIf you're on iOS 13 or below, navigate to Settings > Wi-Fi > [your SSID(s)] > Configure DNS and replace the IPs listed with:\n\n```\n94.140.14.14\n94.140.15.15\n```\n\n**NextDNS**\nThis is for more advanced users, but provides more customization options.\n\nUse the button below to sign up for an account, and save your profile.\n\nScroll down to Setup Guide and use the Apple Configuration Profile Generator if you're on iOS 14+, otherwise download the app.\n\nNextDNS uses their own filter list by default, if you'd like to add/remove filter lists navigate to the Privacy tab.",
+    "button_links": [
+      {
+        "label": "<:Settings2:947377635393163274> AdGuard DNS Profile",
+        "url": "https://cdn.adguard.com/public/Dns/adguard-dns.mobileconfig"
+      },
+      {
+        "label": "<:Link:947344383454367774> NextDNS Sign Up",
+        "url": "https://my.nextdns.io/start"
+      }
+    ]
+  },
+  {
+    "name": "a7moment",
+    "content": "**Checkra1n issues for A7 Devices on Linux Hosts**\nCheckra1n won’t really work for a7 devices on a Linux Host. You will need to do a replug trick and may even need to use an older version of Checkra1n.\n",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Checkra1n A7 Tutorial",
+        "url": "https://www.reddit.com/r/jailbreak/comments/fiapqi/tutorial_fix_a7_possibly_other_devices_that_are/"
+      }
+    ]
+  },
+  {
+    "name": "antivirus",
+    "content": "Temporarily disable your antivirus if it is flagging the jailbreak and interfering with the sideloading process. \n\nFor Windows Defender, disabling real-time protection should be sufficient.\n\n*You should re-enable it after you jailbreak your phone.*",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Disabling Real-Time Protection",
+        "url": "https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960"
+      }
+    ]
+  },
+  {
+    "name": "source",
+    "content": "Other bots:\n[ModMail](https://github.com/kyb3r/modmail)\n[AutoTSS](https://github.com/m1stadev/AutoTSS)",
+    "button_links": [
+      {
+        "label": "<a:girdance:786010947936190504> GIR",
+        "url": "https://github.com/DiscordGIR/GIRRewrite"
+      },
+      {
+        "label": "<a:bloo:903431655459536896> Bloo (discontinued)",
+        "url": "https://github.com/DiscordGIR/bloo"
+      }
+    ]
+  },
+  {
+    "name": "15to14",
+    "content": "**WARNING! Do not attempt to restore on a device that has recieved iOS 16**\n\n**Requirements**\n- A device which *did not receive iOS 16* (iPhone 7 and earlier, iPod Touch 7th Generation, iPad Air 2, and iPad Mini 4)\n- iOS 14.8.1 or earlier blobs\n(If you’ve been on a previous jailbreak with procursus you may have blobs for iOS 14, please check [TSS Saver](https://tsssaver.1conan.com/v2/))\n- A Mac / Linux Computer",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> How to downgrade from iOS 15 to 14",
+        "url": "https://gist.github.com/aac55c97f7925cddcf5ec3167f85dfe8"
+      }
+    ]
+  },
+  {
+    "name": "resetpw",
+    "content": "Open iFile/Filza and head to /private/etc/master.passwd back this file up and save it somewhere else.\n\nOpen the master.passwd file with a text editor then replace those with these lines (if you just want to rest the root password, just replace the first one).\n\nTo rest root user password\n\n`root:/smx7MYTQIi2M:0:0::0:0:System Administrator:/var/root:/bin/sh`\n\nTo reset mobile user password.\n\n`mobile:/smx7MYTQIi2M:501:501::0:0:Mobile User:/var/mobile:/bin/sh`\n\nRef:http://opensource.apple.com/source/files/files-638.1.4/private/etc/master.passwd.iPhone"
+  },
+  {
+    "name": "commoncommands",
+    "content": "Run these commands over SSH or using a terminal such as __NewTerm 2__ or __NewTerm 3__.\n\n**Respring**\n`sbreload` (faster)\n`killall SpringBoard` (for older jailbreaks)\n\n**Safe Mode**\n`killall -11 SpringBoard`\n\n**Userspace Reboot**\n`launchctl reboot userspace`\n\n**uicache**\n`uicache -a`\n\n**ldrestart** - (not recommended, use userspace reboot instead)\n`su root -c ldrestart`\n\n**Reboot**\n`launchctl reboot`\n\n**Fix Cellular connection issues**\n`killall CommCenter`\n\n**Force the checkra1n loader to appear**\n`uicache -fp /var/binpack/Applications/loader.app`\n\n**Force the palera1n loader to appear**\n`uicache -p /cores/binpack/Applications/palera1nLoader.app`",
+    "button_links": [
+      {
+        "label": "<:Depiction:947358756033949786> Newterm 2",
+        "url": "https://chariz.com/get/newterm"
+      },
+      {
+        "label": "<:Depiction:947358756033949786> Newterm 3",
+        "url": "https://chariz.com/get/newterm-beta"
+      }
+    ]
+  },
+  {
+    "name": "exitrecovery",
+    "content": "Some tools may send your device into recovery mode by changing the `auto-boot` flag. This makes your device appear to be in a recovery loop. However, this is reversible.\n\n## Windows/MacOS/Linux\n1. Install blobsaver.\n2. Once installed, Run it and use the `Exit Recovery Mode` option in the help menu.\n\n__FutureRestoreGUI__\n1. Install FutureRestoreGUI\n2. Use the `Exit Recovery` button under the Controls tab.\n\n## Windows and MacOS*\n**iMazing:**\n1. Install iMazing\n2. iMazing will automatically detect your device in recovery and a `Exit Recovery Mode` button will be present.\n\n## MacOS\n**irecovery**\n1. Install Procursus or Homebrew.\n2. install irecovery with `sudo apt install libirecovery-utils` if using Procursus, or `brew install libirecovery` if using Homebrew.\n3. run `irecovery -n` in a terminal.\n\n__Linux__\n1. Obtain `irecovery` and its dependencies. On a Ubuntu-based distro, you can simply run `sudo apt install irecovery` (users on older releases may need to enable the universe repository)\n2. Run `irecovery -n` in a terminal.",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> Download FutureRestoreGUI",
+        "url": "https://github.com/coocoofroggy/FutureRestoreGUI/releases"
+      },
+      {
+        "label": "<:Link:947344383454367774> Download blobsaver",
+        "url": "https://github.com/airsquared/blobsaver/releases"
+      }
+    ]
+  },
+  {
+    "name": "canidowngrade",
+    "content": "Looking to downgrade your device? Check if you can below.\n\n__Unsigned firmwares__\nIf you're trying to downgrade to an **unsigned** version of iOS, you will need to meet specific requirements in order to downgrade. \n\nThese requirements include having a Jailbroken device, [Blobs](https://discord.com/channels/349243932447604736/688126500834246709/947272908630261821), and being in the [SEP/BB](https://docs.google.com/spreadsheets/d/1Mb1UNm6g3yvdQD67M413GYSaJ4uoNhLgpkc7YKi3LBs/edit#gid=0) range of downgrading. (If you're on A11 or below the jailbreak requirement isn't needed, additionally, TrollNonce can be used on 15.0 - 15.5b4).\n\nIf you meet these specific requirements, check out [FutureRestore](https://discord.com/channels/349243932447604736/688126500834246709/947271422579994654) \n\n__Signed Firmwares__\nYou can fortunately downgrade to a **signed** iOS version, you can use iTunes / Finder, or iDeviceRestore with a signed version from https://ipsw.me/ or [AppleDB](https://appledb.dev/firmwares.html) (includes beta and RC firmwares).\n\n__Legacy__\nFor legacy Devices, please ask in legacy and [Legacy Jailbreak](https://discord.gg/bhDpTAu) if you need help.\n\nUseful links: [iOS 14/15 upgrades/downgrades](https://gist.github.com/aac55c97f7925cddcf5ec3167f85dfe8), [Other iOS upgrades/downgrades](https://ios.cfw.guide/futurerestore/), and [Guide to saving blobs](https://ios.cfw.guide/saving-blobs/)",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Downgrade and Dualboot Status",
+        "url": "https://gist.github.com/LukeZGD/9d781f1b03a69fa46869384a9407a41a"
+      }
+    ]
+  },
+  {
+    "name": "emoji",
+    "content": "**How to get the new iOS 16.4 emojis**\n\n1. Search and install __EmojiFontManager__ and __EmojiPort__ for your iOS version in your package manager, the repo is provided below.\n\n2. Install **AppleColorEmoji Unicode 15.0 HD (EFM)**\n\n3. Select the font in EmojiFontManager preferences and respring.\n\nNow you should have the iOS 16.4 emojis on your device!",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add PoomSmart Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://poomsmart.github.io/repo"
+      }
+    ]
+  },
+  {
+    "name": "latest",
+    "content": "**Latest released iOS versions that are able to be jailbroken**\n*If your device is older than the ones listed here, it's jailbreakable on the newest version.\nIf your device is newer, it is unable to be jailbroken at all.*\n\n__iPhones / iPods__\n\n`iPhone 13 Series - 14 Series (A15 - A16)` __16.5__\n`iPhone SE 3 (A15)` __16.5__\n`iPhone XS/XR Series - 12 Series (A12 - A14)` __16.5.1__\n`iPhone SE 2 (A13)` __16.5.1__\n`iPhone 8(+), X (A11)` __16.7.7__\n`iPhone 6s(+), SE 1, 7(+) / iPod 7 (A9 - A10)` __15.8.2__\n\n__iPads__\n\n`iPad Pro 6 / iPad Mini 6 (A15 / M2)` __16.5__\n`iPad 8 - 10 / iPad Pro 3 - 5 / iPad Air 3 - 5 / iPad Mini 5 (A12 - A14 / M1)` __16.5.1__\n`iPad 6 - 7 / iPad Pro 2 (A10(X))` __17.4.1__\n`iPad 5 / iPad Pro 1 (A9(X))` __16.7.7__\n`iPad Air 2 / iPad Mini 4 (A8(X))` __15.8.2__\n\nUse the `/canijailbreak` command or the buttons below for more information.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> iOS Jailbreaking Guide",
+        "url": "https://ios.cfw.guide/get-started"
+      },
+      {
+        "label": "<:Search2:947525874297757706> Full Jailbreak Chart",
+        "url": "https://appledb.dev/"
+      }
+    ]
+  },
+  {
+    "name": "donate",
+    "content": "Use the links below to donate to those who helped develop jailbreaks for the community. Sorted in no particular order.\n\n[Pwn20wnd's Patreon](https://www.patreon.com/Pwn20wnd) (unc0ver)\n[CoolStar's Patreon](https://www.patreon.com/coolstar) (Sileo, Electra, Chimera, Odyssey, Taurine)\n[Bingner's Patreon](https://www.patreon.com/sbingner) (unc0ver, checkra1n, Elucubratus)\n[Hayden's Patreon](https://www.patreon.com/diatrus) (Procursus)\n[Cameron’s Patreon](https://www.patreon.com/CameronKatri) (Procursus)\n[opa334](https://opa334.github.io/donate.html) (Dopamine, TrollStore)"
+  },
+  {
+    "name": "checkra1namd",
+    "content": "If you’re on AMD/Ryzen, you may be encountering a few issues when using checkra1n or palera1n. This can vary between freezes and straight up crashes. It’s because of AMD’s weird drivers that cause it not to work that well with checkra1n’s/palera1n's exploit. If you’re *lucky* you can actually successfully manage to jailbreak using checkra1n/palera1n.\n\n__Tips to increase successrate__:\n- Plug your device into your computer's motherboard.\n- Use a genuine Apple USB-A to lighting cable.\n\nIf you’re stuck on the apple logo please force reboot yourself (see: `/tag reboot`).\n\nIf these don’t work, try to get your hands on another computer (preferably intel), and try to use checkra1n again."
+  },
+  {
+    "name": "reprovisionerrors",
+    "content": "**Apps crashing in unjailbroken state**\nFirst, make sure you're using ReProvision Reborn (or ReProvision + ReProvisionFix for tvOS, but that only works up to 13.x). Also, if you have AppSync Unified installed, that may be interefering with ReProvision and not let it properly sign apps. Try uninstalling it while signing apps, after that you can reinstall it if needed.\n\n**\"This app could not be installed because there’s already 3 signed apps installed. Automatic signing needs at maximum 2 apps installed to your account.\"**\nIf you're getting this error when you have less than 3 apps installed, make sure you don't have any offloaded apps (cloud icon next to their name). Also, depending on your iOS version, apps that have app extensions (AltStore, YouTube, etc.) may take up more than one app slot.\n\n**\"updateCurrentTeamIDWithCompletionHandler: No Team ID present! This is \\*really\\* bad.\"**\nLog out of your Apple ID in ReProvision and log back in again."
+  },
+  {
+    "name": "iproxy",
+    "content": "iproxy is a tool that can be used to ssh into a device over a USB connection, which can be useful in cases such as a frozen display or any other situation where the device's IP address is unknown. To obtain iproxy, you will need to download libimobiledevice (see `/tag libimobiledevice`).\n\nThis will only work when Jailbroken, and if you have openssh installed.\n\n**Instructions:**\n\n__Windows__: Open two command prompt windows. Navigate to where you have the iproxy.exe saved, and drag it into the first command prompt. Add `22 2222` to the end. It should now look something like `path\\to\\iproxy.exe 22 2222`. Pressing enter should yield a message saying `waiting for connection`. Navigate to the second window, and type in `ssh mobile@localhost`. If you get a message saying `The authenticity of host... can't be established.`, enter `yes`. The default login password is `alpine`\n\n__macOS/Linux__: Open two terminal windows. Input `iproxy 2222 22` into the terminal. Pressing enter should yield a message saying `waiting for connection`. Navigate to the second window, and type in `ssh mobile@localhost -p 2222`. If you get a message saying `The authenticity of host... can't be established.`, enter `yes`. The default login password is `alpine`\n\n__Odysseyn1x__: Open the SSH section and type your user and port, the user should either be `mobile` or `root`; we recommend you use `mobile`. The default port should either be `44`, `4444`, `22`, or `2222`. Once done it should prompt you to enter your password, should either be `alpine` or a custom one you set.\n\nIf you’ve done these correctly you should be able to type commands as you wish!"
+  },
+  {
+    "name": "exploitfaq",
+    "content": "An exploit can be used to achieve a jailbreak by forcing iOS to cooperate. \n\nThe release of an exploit writeup does NOT mean an instant jailbreak. Some exploits are very difficult to implement, which means that it will take time to make a jailbreak. Unexpected roadblocks can also cause an exploit to be delayed. Sometimes, exploits release, but they are not useful for a jailbreak. This is usually because modern jailbreaks must use many exploits in a chain (\"exploit chain\"), because some exploits require certain privileges that other exploits provide.\n\nAn important distinction to be made is the fact that a vulnerability is **not** the same thing as an exploit. Many vulnerabilities do lead to exploits, however this is not always the case. A vulnerability is simply a flaw in the software or hardware, which can then potentially be exploited. The process to create a full jailbreak tool will typically go like the following: discover vulnerability/ies -> discover it’s exploitable -> program jailbreak using 1 or more exploits in a chain.\n\nAlso, please note that some exploits in the chain can get patched with newer iOS versions. This means that if there is a jailbreak for iOS 15.1, that does ***NOT*** mean that 15.3 will come any sooner, if iOS 15.3 does not share the same exploit. (If iOS `x`.1 shares an exploit with `x`.3, the progress towards the development of the exploit will help both, but if `x`.3 is missing an exploit in the chain, the jailbreak may not release at the same time, as they need to find an alternative.)\n\ntl;dr: \n1) exploit ≠ jb\n2) jb devs need time to convert exploit into jb\n3) not all vulns are usable as exploits\n4) some exploits are more powerful than others\n5) making a jb is hard\n6) jailbreaking an iOS version does not always mean that the next ones will be any easier to jailbreak\n\nThanks you to <@!675474604533219360> & <@!274692033707245570> for writing it."
+  },
+  {
+    "name": "checkra1nlinux",
+    "content": "Open https://checkra.in/releases/#all-downloads in a browser (Firefox is preinstalled on most distros)\n\nAssuming you're on an Intel/AMD PC, download the Linux CLI x86_64 build and save it to your Downloads folder\n\nOpen a terminal and run the following command:\n`chmod +x ~/Downloads/checkra1n`\n\nTo run checkra1n use the following command\n`sudo ~/Downloads/checkra1n`\n\n**If you're using Windows and only plan on using Linux for jailbreaking with checkra1n, consider using [Odysseyn1x](https://guides.stkc.win/posts/odysseyn1x) rather than a full Linux distro**"
+  },
+  {
+    "name": "bios",
+    "content": "When using Odysseyn1x or Checkn1x you may need to disable Secure Boot on your system. If you’re having trouble getting into your BIOS, here’s a list of PC brands with their corresponding BIOS keys.",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> List of PC BIOS keys",
+        "url": "https://www.disk-image.com/faq-bootmenu.htm"
+      }
+    ]
+  },
+  {
+    "name": "rootless",
+    "content": "Rootless means you cannot write to the root filesystem, only leaving `/var` and `/private/preboot` being writable. Semi-untethered jailbreaks such as Fugu15/Dopamine must be rootless while semi-tethered jailbreaks can simulate a rootful installation by creating a clone of the existing root filesystem. Current semi-tethered jailbreaks such as palera1n have the option to be rootless anyway.\n\n__What does this mean for the average user?__\nTweaks would need to be updated to support iOS 15, check if the tweak you’re installing works on 15. Not all tweaks will work out of the box for iOS 15.",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> In-depth explanation",
+        "url": "https://reddit.com/r/jailbreak/comments/t6lleq/discussion_the_state_of_ios_15_aka_what_even_is_a/"
+      },
+      {
+        "label": "<:Link:947344383454367774> Technical explanation",
+        "url": "https://theapplewiki.com/wiki/Rootless"
+      }
+    ]
+  },
+  {
+    "name": "unsupervise",
+    "content": "To remove supervision on your device:\n\n__Jailbroken__\n1. Install SupervisedEnabler if it's not installed already.\n2. Uninstall SupervisedEnabler.\n3. To complete the process, do a (userspace) reboot or ldrestart.\n\n__Unjailbroken__\nErase all content and settings, then restore a backup that was taken while unsupervised or set up as new.\n\nNote that iCloud backups may not work when trying to unsupervise, use backups made from your computer instead.",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add SupervisedEnabler Repo",
+        "url": "https://sharerepo.stkc.win/?repo=https://cydia.ichitaso.com/"
+      }
+    ]
+  },
+  {
+    "name": "sshsftp",
+    "content": "**SSH**\nUseful for running terminal commands to fix issues or modify files on your device. Especially useful when your device is in a state such as a respring loop.  \n\nSee `/tag commoncommands` for a list of commands typically used.\n\n**SFTP** \nA simple way to access your devices' filesystem from a PC or another device.\n\nBoth of these can be done over USB or LAN. (Wi-Fi)\n",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> How to SSH",
+        "url": "https://github.com/joshuah345/markdownguides/blob/master/ios/ssh.md#how-to-ssh"
+      },
+      {
+        "label": "<:Guide:947350624385794079> How to SFTP",
+        "url": "https://github.com/joshuah345/markdownguides/blob/master/ios/ssh.md#how-to-sftp"
+      }
+    ]
+  },
+  {
+    "name": "sideloadfaq",
+    "content": "Sideloading apps on your device is relatively straightforward, but Apple has limitations in place for free developer accounts. Those being:\n\n- A limit of 3 sideloaded apps per device (10 apps if you're on iOS 13.3 or lower)\n- A limit of 10 App IDs \n- Apps will need to be re-signed after 7 days\n\nIf you’re tired of these limitations and is looking to buy a developer account, you can go [here](https://developer.apple.com/programs/enroll/). These cost around $99 yearly, the benefits you can get is the following:\n\n- Can sideload unlimited apps for 100 devices of each type\n- Unlimited app IDs\n- Needs to be resigned every 365 days\n\nSee `/tag sideload` for more information on the tools you can use."
+  },
+  {
+    "name": "userspacereboot",
+    "content": "**How to Reboot Userspace**\n\nRebooting userspace will restart every process other than launchd (init system) and the kernel, preserving your jailbreak state.\n\n__PowerSelector__ **Does not work on any iOS 15 jb yet**\n1. Add ichitaso's repo\n2. Install `PowerSelector (iOS 11 to 14)`\n3. An app will appear on your home screen labeled: `PowerSelector`\n4. Launch the app and tap `Userspace Reboot`\n\n__PowerApp__\n1. Add the Chariz Repo\n2. Install `PowerApp`\n3. An app will appear on your home screen labeled: `PowerApp` \n4. Launch the app and tap `Soft Reboot`\n\nNote: Users on older jailbreaks may only have an option to LDrestart. if you do, use that button instead. Please do not use ldrestart on a modern jailbreak. The way it functions is outdated and not as reliable.\n\n__Terminal/Shell__\n`launchctl reboot userspace`\n",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add ichitaso's Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://ichitaso.com/apt"
+      },
+      {
+        "label": "<:Add:947354227171262534> Add Chariz Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://repo.chariz.com"
+      }
+    ]
+  },
+  {
+    "name": "safemode",
+    "content": "__checkra1n/odysseyra1n:__\nReboot your device and enable the \"Safe Mode\" option in checkra1n. Rejailbreak.\n\n__Semi-untethers:__\nReboot your device and disable \"Load Tweaks\" or a similarly named option in your jailbreak app. Rejailbreak.\n\nNote: If you're using unc0ver, you can exit this mode by toggling `Enable Tweak Injection` in the Substitute app and respringing.\n\n__All jailbreaks:__\nRun `killall -11 SpringBoard` in a shell or use PowerApp/PowerSelector",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add PowerSelector Repo",
+        "url": "https://sharerepo.stkc.win/?repo=https://ichitaso.com/apt"
+      },
+      {
+        "label": "<:Add:947354227171262534> Add PowerApp Repo",
+        "url": "https://sharerepo.stkc.win/?repo=https://repo.chariz.com"
+      }
+    ]
+  },
+  {
+    "name": "emulators",
+    "content": "List of iOS emulators and the consoles they support.",
+    "button_links": [
+      {
+        "label": "<:Search2:947525874297757706> View list",
+        "url": "https://gist.github.com/joshuah345/ecbf8a921f14946cc363105b1530b79d"
+      }
+    ]
+  },
+  {
+    "name": "mybloxx",
+    "content": "We strongly advise against using MYBloXX for numerous reasons, this includes editing system files and outright bad practices. \n\nIt's recommended you uninstall MYBloXX to save you from a potential headache later on, if you still need an adblocker you can use the ones provided in `/tag adblock`.\n\n**What does MYBloXX do?**\n- Has disabled internet access completely on people's devices multiple times due to his server going down. [[1]](https://old.reddit.com/r/jailbreak/comments/ts9br2/help_mybloxx_kills_data/) [[2]](https://old.reddit.com/r/jailbreak/comments/tsb2wy/question_help_youtube_appstore_reddit_twitter_not/) [[3]](https://old.reddit.com/r/jailbreak/comments/ts9h2o/help_urgent_help_needed_no_internet_anymore/) [[4]](https://old.reddit.com/r/jailbreak/comments/rihfxy/question_random_internet_disconnects_with_mybloxx/) [[5]](https://old.reddit.com/r/jailbreak/comments/qx7spc/questionmybloxx_down_or_bug/)\n- Edits various system files.\n^ This includes editing jetsam, which in a lot of cases can cause your device to panic when apps use too much memory/poorly written tweaks cause a memory leak.\n- Persists after unjailbreaking, and can get stuck in your backup making it a pain to remove. [[6]](https://old.reddit.com/r/jailbreak/comments/th7swj/help_cannot_remove_mybloxx/)\n- Supervises your device which disables iCloud lock. [[7]](https://canary.discord.com/channels/349243932447604736/925909162666373140/950161105005715507)\n- Redistribut(es/ed) plutil without permission. [[8]](https://archive.ph/v68ql)\n- If you update to iOS 15 without removing MYbloXX fully, iCloud Private Relay might not work properly.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Removing MYBloXX Guide",
+        "url": "https://gist.github.com/beerpiss/9bc6ea49bb3d7076990e46fe473c8a9a"
+      }
+    ]
+  },
+  {
+    "name": "discordtweaks",
+    "content": "1. [Harmony](https://repo.dynastic.co/) | For theming Discord (Patched on 109.0)\n2. [ZeroBlockedMessages](https://cdn.discordapp.com/attachments/876847797570252821/925815796062642206/com.fiore.zeroblockedmessages_1.0-8debug_iphoneos-arm.deb) | Hide blocked messages\n3. [DiscordExtras](https://github.com/NotZoeyDev/DiscordExtras/) | Apply various patches to Discord (Patched on 89.0)\n4. [DiscordMessageSpoofer](https://github.com/iCrazeiOS/DiscordMessageSpoofer/) | Can spoof Discord messages\n5. [OLED Mode for Discord](https://repo.lauren.sh/) | Recommended over Harmony\n6. [GetDatPfp](http://apt.thebigboss.org/repofiles/cydia/) | Gets profile pictures/server icon/emoji URLs\n7. [Suffisso](https://donato-fiore.github.io/repo/) | Adds a suffix to your messages\n8. [DiscordSecureToken](https://repo.anamy.gay/) | Stops discord from storing your token in plaintext\n9. [Awatara](https://donato-fiore.github.io/repo/) | Changes all images in discord to 1 image\n10. [Invisible Typing](https://donato-fiore.github.io/repo/) | Hides typing status\n11. [Tranzlo](https://miro92.com/repo/) | Gives translations for messages\n12. [DrkCord](https://repo.twickd.com/) | Alternative to Harmony but with far less customization\n13. [DiscordBeGone](https://cdn.discordapp.com/attachments/688121419980341282/914223603552251964/com.fiore.discordbegone_1.0_iphoneos-arm.deb) | If you hate discord here, no more discord\n14. [Discord Classic](https://cydia.invoxiplaygames.uk/beta/) | Discord for Legacy Firmwares\n15. [Enmity](https://enmity.app/) | [Unoffical plugins](https://beerpiss.github.io/enmity/)\n"
+  },
+  {
+    "name": "filzaescaped",
+    "content": "FilzaEscaped is an __unofficial__ modification to Filza where you're able to modify system files without a need for a jailbreak.\n\n**What can it do?**\nOn __iOS 14 and below__ and below you're able to modify anything about the filesystem with little to no restrictions. \n\nOn __iOS 15__ you're only able to write to `/var` and `/private/preboot`.\n\nYou cannot do any sort of tweak injection, so your favorite tweaks like Atria, Newterm 2, and Snowboard will not work.\n\n**Is it safe to use?**\nThe way FilzaEscaped works is with an exploit and a few bypasses, there's a few issues of this tool you need to bear in mind:\n\n- Device can crash from navigating around the app\n- Modifying certain system files will most likely cause your system to __not boot__. If you don't know what a files does, don't mess with it.\n- Modifying your filesystem on iOS 14 and below can cause permanent changes that can be irreversible. \n- Can cause device instability, e.g.: crashes from locking the device.\n\nIt's generally not recommended to use so proceed at your **own risk**.",
+    "button_links": [
+      {
+        "label": "<:fr:712506651520925698> FilzaEscaped Download",
+        "url": "https://basvtdevelopments.com/filzaescaped"
+      }
+    ]
+  },
+  {
+    "name": "crosspost",
+    "content": "dont"
+  },
+  {
+    "name": "developermode",
+    "content": "On iOS 16, you will need to enable a new feature called “Developer Mode” in order for palera1n to work or to open sideloaded apps. This toggle has no practical effect on your device other than allowing  the above to happen. \n\n**How to enable “Developer Mode”**\n\n**Note**: you will need to sideload an app first before the toggle will appear. For the purpose of this tutorial, you may sideload [Odyssey](https://github.com/Odyssey-Team/Odyssey/releases/download/v1.4.2/Odyssey-1.4.2.ipa) as it is a relatively small IPA. See `/tag name:sideload` for further instructions.\n\n- Go to `Settings -> Privacy & Security`\n- Scroll down until you see “Developer Mode”\n- Select “Developer Mode”\n- Enable it, then it should prompt reboot\n- Confirm that you want to enable it with your passcode ",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> Developer Mode Documentation",
+        "url": "https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device"
+      }
+    ]
+  },
+  {
+    "name": "legizmo",
+    "content": "Legizmo is a tweak that lets you pair your Apple Watch with your iPhone even if it's on an incompatible version (to some extent). You can get it from Chariz, or get the beta version/TrollStore ipa from the creator's [Patreon](https://www.patreon.com/lunotech11). **XinaA15 users must purchase the Patreon version!**",
+    "button_links": [
+      {
+        "label": "<:Add:947354227171262534> Add Chariz Repo",
+        "url": "https://repos.slim.rocks/repo/?repoUrl=https://repo.chariz.com"
+      },
+      {
+        "label": "<:Link:947344383454367774> Compatible iOS/watchOS versions",
+        "url": "https://legizmo.app/"
+      }
+    ]
+  },
+  {
+    "name": "tetherdowngrade",
+    "content": "Tether downgrading is the process of using the checkm8 exploit in order to downgrade without blobs for that version. A consequence of this process is that your device will have to boot from a PC every time it shuts down, restarts, or crashes.\n\nWe highly recommend to *not do this* if you don't know what you're doing.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Reddit Tutorial",
+        "url": "https://www.reddit.com/r/jailbreak/comments/vqcqol/tutorial_how_to_tethered_downgrade_from_ios_15_to/"
+      },
+      {
+        "label": "<:Link:947344383454367774> Downsides of Tethering",
+        "url": "https://github.com/mineek/sunst0rm#notes"
+      }
+    ]
+  },
+  {
+    "name": "restartamds",
+    "content": "If your iPhone, iPad or iPod isn't showing up in iTunes or in Sideloadly/AltServer on a Windows computer, restarting the Apple Mobile Device Service (AMDS) may fix it.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> How to restart AMDS",
+        "url": "https://support.apple.com/en-us/HT203188"
+      }
+    ]
+  },
+  {
+    "name": "gaster",
+    "content": "If you're having trouble using ipwndfu or if you're following the [iOS 15/16 checkm8 downgrade guide](https://gist.github.com/0xallie/aac55c97f7925cddcf5ec3167f85dfe8), there is an alternative tool named gaster that you can use to enter pwned DFU mode.\n\n__Usage:__\n1. Download and extract the zip for your platform.\n2. Launch a terminal\n3. `cd` to the directory you extracted gaster to.\n4. run `cd gaster`\n4. run `chmod +x gaster`\n5. Connect your device to your PC and enter DFU mode.\n6. run `./gaster pwn`",
+    "button_links": [
+      {
+        "label": "<:Download2:947352797899268136> Download for Linux",
+        "url": "https://github.com/joshuah345/gaster/releases/download/2023.02.03/gaster-linux.zip"
+      },
+      {
+        "label": "<:Download2:947352797899268136> Download for macOS",
+        "url": "https://github.com/joshuah345/gaster/releases/download/2023.02.03/gaster-mac.zip"
+      }
+    ]
+  },
+  {
+    "name": "itunesdriver",
+    "content": "If you'd like to install the support drivers for mobile (iOS) devices without installing iTunes, follow the steps below.\n\n1. [Download iTunes](https://apple.com/itunes) setup for your architecture\n2. Extract the setup .exe with 7-zip or another tool such as WinRAR\n3. Install the `AppleMobileDeviceSupport` msi file."
+  },
+  {
+    "name": "altstore",
+    "content": "Altstore is a sideloading tool which allows you to sideload any app not available on the App Store (e.g., jailbreaks and emulators).\n\nAltstore is available on MacOS and Windows and can be downloaded [here](https://altstore.io/).\n\nAltstore(AltLinux) is available on linux [here](https://github.com/i-love-altlinux/AltLinux)."
+  },
+  {
+    "name": "legacy",
+    "content": "If you're seeing this you're probably asking a legacy question in more modern jailbreak channels. Please go to <#688124493918371870> or [Legacy Jailbreak Server](https://discord.gg/bhDpTAu)"
+  },
+  {
+    "name": "eta",
+    "content": "We have no way of knowing. When there is news, it will be in <#688122358107603013>"
+  },
+  {
+    "name": "onboards",
+    "content": "https://github.com/joshuah345/deverser"
+  },
+  {
+    "name": "question",
+    "content": "**Please include the following when asking for help:**\n- Device `(e.g. iPhone 12)`\n- iOS version `(e.g. iOS 14.3)`\n- Current jailbreak (if any)\n- Solutions attempted\n- Any relevant details"
+  },
+  {
+    "name": "generator",
+    "content": "Common generators you can try if your blob doesn't have one:\n\nA9 and below:\n```\nAPNonce - Generator\n3a88b7c3802f2f0510abc432104a15ebd8bd7154 - 0x1111111111111111\n603be133ff0bdfa0f83f21e74191cf6770ea43bb - 0xbd34a880be0b53f3\n352dfad1713834f4f94c5ff3c3e5e99477347b95 - 0x9d0b5b5ff92fff23\n42c88f5a7b75bc944c288a7215391dc9c73b6e9f - 0x4bb8834ba6444b50\n0dc448240696866b0cc1b2ac3eca4ce22af11cb3 - 0x698337f5a79c3292\n9804d99e85bbafd4bb1135a1044773b4df9f1ba3 - 0xedeeb72d7575e360\n```\n\nA10 and A11:\n```\nAPNonce - Generator\n27325c8258be46e69d9ee57fa9a8fbc28b873df434e5e702a8b27999551138ae - 0x1111111111111111\n15400076bc4c35a7c8caefdcae5bda69c140a11bce870548f0862aac28c194cc - 0xbd34a880be0b53f3\n833e50b9c6a4fbfbdc51144a60b4cf25be3a0a4742ca2b7bd6f5ec06905443ac - 0x9d0b5b5ff92fff23\nd8f682df87d812c372491b613d59795a80383f439587c0bb511ccf6865eb87cc - 0x4bb8834ba6444b50\n```"
+  },
+  {
+    "name": "trollstore",
+    "content": "**What is TrollStore?**\nTrollStore is a tool which abuses a CoreTrust bug in order to make it possible to permanently sign any app with any entitlements (push notifications, root permissions, etc.).\n\nTrollStore supports iOS **14.0 - 16.6.1**, as well as iOS **17.0**, though arm64e devices on iOS 17.0 do not have a method to install TrollStore at this time.\n\nFor a guide on installing TrollStore, refer to https://ios.cfw.guide/installing-trollstore for specific guides based on your device and iOS version.\n\n**This is NOT your traditional jailbreak with tweaks and stuff, please bear in mind.**",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> View GitHub",
+        "url": "https://github.com/opa334/TrollStore/"
+      },
+      {
+        "label": "<:Link:947344383454367774> Standalone TrollStore apps",
+        "url": "https://discord.com/channels/349243932447604736/688126462066163756/1018669576424267907"
+      }
+    ]
+  },
+  {
+    "name": "stuckrootfs",
+    "content": "While using semi-untethered jailbreaks such as unc0ver or Taurine, you may experience issues when attempting to restore rootfs. While in most cases there is no official fix, you may try some workarounds to fix it yourself. You may visit `/tag rootfs` to see how to restore rootfs with various jailbreaks\n\nChimera users on **12.5.6** utilizing ChimeraFix must ensure they are using v2 of the package in order to restore rootfs.\n\nTaurine may have issues if you attempt to restore rootfs after previously jailbreaking with another tool, or the process may rarely fail even if jailbroken with Taurine. If this occurs, follow the linked guides for unc0ver. \n\nunc0ver users may use either of the following guides based on your version.",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> Fix with Fugu14 (14.3-14.5.1)",
+        "url": "https://www.reddit.com/r/jailbreak/comments/rlnw19/tutorial_how_to_restore_rootfs_if_the_unc0ver_app/"
+      },
+      {
+        "label": "<:Link:947344383454367774> Fix with Filza + Trollstore (14.0-14.8)",
+        "url": "https://www.reddit.com/r/jailbreak/comments/ycefvj/tutorial_how_i_repaired_broken_dpkg_on_148/"
+      }
+    ]
+  },
+  {
+    "name": "sunst0rm",
+    "content": "This is the exact reason you should never tethered in the first place\nyour brain can't wrap your head around how dfu mode works\nso basically you dug yourself a hole\nthat you can't get out of\nthis will take a lot of explaining that I need you to fully understand\nuntil you are ready to learn, we will be waiting.\n\nTLDR: You corrupted the ondevice LLB which makes dfu way harder to enter."
+  },
+  {
+    "name": "read",
+    "content": "Commonly enough, the error message provided to you is enough for you to solve your problem. Subsequently, without providing this error to us is like trying to speak to a brick wall. Please provide errors or logs when asking a question related to errors."
+  },
+  {
+    "name": "shouldyoujb",
+    "content": "**Pros** \n- Far more customization than stock iOS/iPadOS, Including code injection into apps and the system. \n- Access to the command line and various command line tools.\n- Can modify root or your user folder depending on what jailbreak you use.\n- The ability to sign apps permanently or have it automatically done depending on what iOS version you’re on.\n\n**Cons**\n- With semi-tethered/tethered jailbreaks on certain devices, you would be unable to use SEP functions (FaceID/Passcode/Apple Pay). There are tweaks to “bring” some of those functions back (not including Apple Pay), but those only persist in a jailbroken state.\n- Some jailbreaks can’t boot in a jailbroken state at all without a use of a computer.\n- You lose security, meaning you’re more vulnerable to malware/spyware with the things you’re installing.\n- Apps can detect a modified device and block you from using them. Many of these apps have bypasses but less work on more recent iOS versions.\n- Having to stay on a lower iOS version will eventually cause app, service and hardware incompatibilites to arise. Such as apple products requiring newer iOS versions to fully work.\n- It's possible to break your iOS or jailbreak install if you're not careful.\n- Jailbreaks themselves can cause system instability, battery drain or have bugs.\n\nIf you are willing to accept the risks and learn how to use a jailbreak and compatible software, visit iOS Guide with the button below to see if your device can be jailbroken and receive instructions on how to do so.",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> Visit iOS Guide",
+        "url": "https://ios.cfw.guide"
+      }
+    ]
+  },
+  {
+    "name": "liveboot",
+    "content": "Many jailbreak/iOS tools may require macOS or Linux. If you have a Windows computer you can \"live-boot\" Linux which allows you to boot (start your PC) into a Linux system directly off a USB flash drive/stick or a SD card without even affecting your main OS ('partition').\nTo get started, you will need a 8GB+ USB stick and a PC with secure boot disabled.\n[Disabling Secure Boot](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/disabling-secure-boot)\n\nWe suggest you use Ubuntu as it's one of the most beginner-friendly distros.\n\n1. Download [BalenaEtcher](https://www.balena.io/etcher/) for your current OS.\n2. Download the [Ubuntu installation file](https://ubuntu.com/download/desktop) (.iso file) of your choice.\n3. Plug your USB stick.\n4. Open BalenaEtcher, and select the Ubuntu .iso file you just downloaded.\nWARNING: \"burning\" an image WILL erase the USB stick and permanently delete all data. Please make a backup.\n5. Select the USB device you will install Ubuntu on.\n6. Click 'Flash'.\n7. After operation is finished, you may boot from it.\n\n**Please check your PC manufacturer's details on how to boot from USB devices.**"
+  },
+  {
+    "name": "delayotatrouble",
+    "content": "**16.1.2 DelayOTA's are dead, please dont try.**\n\nIf you are having trouble with delayota, such as the version you're trying to get not appearing. Check the following.\n\n**Is your device Supervised:**\n- Ensure that there is a message at the top of your settings app that says \"This device is supervised and managed.\" Or some variant of it with a name in it. If there is not, attempt your chosen method of supervision again and ensure you followed their steps correctly.\n\n**Attempt to install one profile on top of the other:**\nIf all is correct, you're supervised correctly, etc. But the update still refuses to show itself, attempt this following trick.\n- Install any other delayota profile for your device that is currently signed. In this case, 16.1.1. Then try to install your profile of choice on top of it.\n\nIf it is still not working, please request help in one of the following places:\n<#925909162666373140> \n<#969343289641828382>"
+  },
+  {
+    "name": "palen1x",
+    "content": "palen1x allows you to use palera1n-c on Windows computers via live-booting. You will need a USB flash drive or SD card for this.",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> palen1x Tutorial",
+        "url": "https://ios.cfw.guide/using-palen1x"
+      },
+      {
+        "label": "<:Link:947344383454367774> Removing Ventoy",
+        "url": "https://discord.com/channels/349243932447604736/688122301975363591/900122819747262534"
+      }
+    ]
+  },
+  {
+    "name": "cowabunga",
+    "content": "**What is Cowabunga**\n\nCowabunga is an app that abuses  [CVE-2022-46689](https://support.apple.com/en-us/HT213530) \n\nCowabunga **IS NOT** a jailbreak but allows you to use some *jailbreak like* features which includes but is not limited to: Springboard tweaks, custom lockscreen passcodes, themes without shortcuts, hiding dock, home bar, dynamic island,  supervision etc. \n**Full feature list can be found on github**\n\n**iOS versions it supports?**\niOS 14.0-15.7.1 and 16.0-16.1.2\n**Warning: Some changes are permanent on iOS 14.0-14.8.1**\n\n__Cowabunga is not a jailbreak, it does not include a package manager, it will not enable you to use any tweak__\n\nYou can use Altstore, Esign, ipasigner, sideloadly, trollstore to install\n\nTheir discord server can be found at the bottom of the github page for support.",
+    "button_links": [
+      {
+        "label": "Cowabunga Github",
+        "url": "https://github.com/leminlimez/Cowabunga"
+      },
+      {
+        "label": "Releases",
+        "url": "https://github.com/leminlimez/Cowabunga/releases/latest"
+      }
+    ]
+  },
+  {
+    "name": "giveaway",
+    "content": "**How to do a giveaway**\n\n1. What would you like to giveaway\n\n2. How long for the giveaway (12h+)\n\n3. Which giveaway channel? ( #giveaways or #cool-people-giveaways ) \n\n4. How many winners? \n\nPing rick! (admin) "
+  },
+  {
+    "name": "rootlogin",
+    "content": "**PSA: Logging in as root**\nLogging in as root is no longer supported. Nor is it recommended. Instead you can use the mobile user and run commands with sudo which will run them as root. You should have set your sudo password when jailbreak for the first time. If you do not remember setting a password, default passwords may be `alpine` or `0000`.\nSudo is a better practice than root login.\nif you desperately need root shell because you cope hard, `sudo -i -u root`"
+  },
+  {
+    "name": "palera1nerrors",
+    "content": "**256**: occurs when trying to jailbreak with rootful for the first time or when trying to force install package managers over existing ones. Use rootless or use beta 5 (note: 16.4+ not supported).\n\n**512**: occurs when palera1n static and strap are currently down. Please try again later. There is typically no indication of when it will come back online."
+  },
+  {
+    "name": "resolution",
+    "content": "If you're changing your resolution with a tweak such as System Info or maXscale on checkra1n, you should always rejailbreak in safe mode to avoid screen glitches, then follow these steps:\n1. (System Info only) Run ofbres r in a terminal.\n2. If you're using odysseyrain, run sudo /etc/rc.d/libhooker S& sbreload in a terminal (or use PowerSelector to enable libhooker). On stock checkra1n, you'll have to rejailbreak with safe mode disabled.\n3. (System Info only) Set your desired resolution again."
+  },
+  {
+    "name": "appleservices",
+    "content": "If you're having issues connecting to Apple Services please check here, note that this isn't updated right away.\nIf you are having trouble connecting to servers delete any tweaks that are known to cause connectivity issues, and make sure you don't have any daemons disabled.",
+    "button_links": [
+      {
+        "label": "Check Server Status",
+        "url": "https://www.apple.com/support/systemstatus/"
+      }
+    ]
+  },
+  {
+    "name": "applecdnfail",
+    "content": "Apple has made changes to their CDN that may prevent you from downloading certain IPSW files, most commonly versions that are considered legacy. In order to fix this, you will need to download the IPSW over `http` rather than `https` which can be accomplished by removing the `https://secure-` from the URL."
+  },
+  {
+    "name": "ios17moment",
+    "content": "Restoring iOS 17 hates doing so on macOS that is not Sonoma. Install this, restart both devices and try again. (To be polished)",
+    "button_links": [
+      {
+        "label": "<:Guide:947350624385794079> Download",
+        "url": "https://developer.apple.com/services-account/download?path=/Developer_Tools/Device_Support_for_macOS_14_beta/DeviceSupport.dmg"
+      }
+    ]
+  },
+  {
+    "name": "reddit",
+    "content": "The r/jailbreak subreddit is currently set to private indefinitely due to a community protest against Reddit. We stand in solidarity with numerous people who need access to the API including bot developers, people with accessibility needs (r/blind) and 3rd party app users (Apollo, Sync, etc.)"
+  },
+  {
+    "name": "restorefaq",
+    "content": "To restore to an iOS/iPadOS version, it needs to have been signed by Apple. SHSH blobs (or APTickets) are captured responses from apple's signing servers that you can get when a version is signed.\n\nBlobs themselves do not expire, but usability relies on other factors:\n\n1. Your device must have a method of setting a boot nonce (number-used once) generator. this value is used to randomize blobs and is sent to apple's servers to generate one of these tickets. Typically you need a jailbreak, bootrom exploit (e.g. checkm8) or some tool that can read and write to kernel memory (using exploits) to set this value. if you restore or update your device, this value will change, making the blob useless until there's another method of setting it.\n\n2. Even if you have a boot nonce set, the OS is not the only firmware that will be restored or upgraded. SEP (the chip responsible for encryption and other security features in modern devices) also has it's own firmware. This firmware must be compatible with the iOS version you want to restore/upgrade to or else the restore will fail, in other cases your device may not boot, be unable to activate or you will lose FaceID functionality (if applicable). on iPhones and iPads with cellular connectivity, there is also a baseband firmware (which is just the firmware for the radios). If this firmware is incompatible, you may not be able to activate your device if a restore succeeds.\nWe currently do not have a method of restoring unsigned firmwares for other components in a device, which is why the latest/oldest signed firmware has to be used.  See `/tag sepbb` for a compatibility chart.",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> Explanation of blobs",
+        "url": "https://gist.github.com/nikoyeah1/9fcf4b2f18494d3974777635f4fed60a"
+      }
+    ]
+  },
+  {
+    "name": "noob",
+    "content": "[Latest iOS/iPadOS version with jailbreaks available](https://discord.com/channels/349243932447604736/688126500834246709/1220016028327870504)\n\n[Glossary of terms](https://discord.com/channels/349243932447604736/688126500834246709/1134944077452947548)\n\n**Recommended Repos:**\n1. [Havoc](https://havoc.app) | [Add to Sileo](https://repos.slim.rocks/repo/?repoUrl=https://havoc.app&manager=sileo) | [Add to Zebra](https://repos.slim.rocks/repo/?repoUrl=https://havoc.app&manager=zebra)\n2. [Chariz](https://chariz.com) | [Add to Sileo](https://repos.slim.rocks/repo/?repoUrl=https://repo.chariz.com&manager=sileo) | [Add to Zebra](https://repos.slim.rocks/repo/?repoUrl=https://repo.chariz.com&manager=zebra)\n3. [SparkDev](https://sparkdev.me/) | [Add to Sileo](https://repos.slim.rocks/repo/?repoUrl=https://sparkdev.me&manager=sileo) | [Add to Zebra](https://repos.slim.rocks/repo/?repoUrl=https://sparkdev.me&manager=zebra)\n4. [BigBoss](http://apt.thebigboss.org/repofiles/cydia) | [Add to Sileo](https://repos.slim.rocks/repo/?repoUrl=http://apt.thebigboss.org/repofiles/cydia&manager=sileo) | [Add to Zebra](https://repos.slim.rocks/repo/?repoUrl=http://apt.thebigboss.org/repofiles/cydia&manager=zebra)\n5. [TIGI Software](https://tigisoftware.com/cydia) | [Add to Sileo](https://repos.slim.rocks/repo/?repoUrl=https://tigisoftware.com/cydia&manager=sileo) | [Add to Zebra](https://repos.slim.rocks/repo/?repoUrl=https://tigisoftware.com/cydia&manager=zebra) \n**Recommended Guides:**\n1. [Complete guide to iOS modification, from stock to jailbroken](https://ios.cfw.guide/)\n2. [Palera1n](https://discord.com/channels/349243932447604736/688126500834246709/1132541180001914890) | [Palera1n Guide](https://ios.cfw.guide/installing-palera1n/) | \n3. [Palen1x](https://discord.com/channels/349243932447604736/688126500834246709/1132541481534632100) |[Palen1x Guide](https://ios.cfw.guide/using-palen1x)\n4. [Restore rootfs (remove jailbreak)](https://discord.com/channels/349243932447604736/688126500834246709/1134936769507381348)\n5. [Sideloading with Sideloadly](https://ios.cfw.guide/sideloading-apps/)\n6. [Sideloading with AltStore](https://altstore.io/faq/)\n7. [Saving Blobs](https://ios.cfw.guide/saving-blobs/)\n\n**Recently Released**\n[Smart Notifications](<https://www.reddit.com/r/jailbreak/comments/1bhs1lp/paid_release_smartnotifications_ios_1516/>) | [Video](<https://www.youtube.com/watch?v=gS6ZlwnbRAY>) | [$2.99](<https://havoc.app/package/smartnotificati>)\n[Mitsuha Forever 2.2.1 ](<https://www.reddit.com/r/jailbreak/comments/1bao94p/release_mitsuha_forever_221_updated_for_ios_1516/>) |  [Repo](<https://zsaaiq.github.io/jailbreakrepo/>)\n[Fiona](<https://www.reddit.com/r/jailbreak/comments/1b8rdir/paid_release_fiona_make_your_tab_bar_float/>) | [$0.99](<https://havoc.app/package/fiona>) | [Preview 1](<https://preview.redd.it/paid-release-fiona-make-your-tab-bar-float-v0-4gszhy410wmc1.jpg?width=1080&crop=smart&auto=webp&s=c5d3150ab0b248e2312bc36da92e9477e21b8230>) | [Preview 2](<https://preview.redd.it/paid-release-fiona-make-your-tab-bar-float-v0-ylx0tc020wmc1.jpg?width=1080&crop=smart&auto=webp&s=30765c0b0a91b8dfe9b663584655f60907649562>) | [Preview 3](<https://preview.redd.it/paid-release-fiona-make-your-tab-bar-float-v0-rtd4etc20wmc1.jpg?width=1080&crop=smart&auto=webp&s=3857e0c3d7f0638ca40840e10b80c25b4fef6a3a>)\n[Mooner](<https://www.reddit.com/r/jailbreak/comments/1b8c0dl/free_release_mooner_an_ios_1516_lockscreen_tweak/>) | [Preview](<https://preview.redd.it/free-release-mooner-an-ios-15-16-lockscreen-tweak-v0-ecj7dyr89smc1.jpg?width=1080&crop=smart&auto=webp&s=ea92fb15a3eb5e1248f3fbf42ecaaf6bed90d7b3>) | [Repo](<https://nowisdev.github.io/>)\n[No2Theft iOS 16](<https://www.reddit.com/r/jailbreak/comments/1b6lac9/paid_release_no2theft_ios_16_is_now_live_the_most/>) | [$1.99](<https://havoc.app/package/no2theftios16>) | [Preview 1](<https://media.havoc.app/65e3bf6fc97a362fa82948a8>)",
+    "button_links": [
+      {
+        "label": "Old lists of tweaks",
+        "url": "https://discord.com/channels/349243932447604736/688122301975363591/1132363048389197876"
+      },
+      {
+        "label": "Older lists of tweaks",
+        "url": "https://discord.com/channels/349243932447604736/688126500834246709/1066115587232768181"
+      }
+    ]
+  },
+  {
+    "name": "glossary",
+    "content": "**Pac:** A feature of the CPU to authenticate pointers which is effective inside arm64e processes. A PAC bypass is when you find some way to sign an arbitrary pointer.\n\n**PPL:** PPL stands for Page Protection Layer, and it works as a means of security by preventing code from being modified once it’s verified by the system. PPL bypasses aren’t particularly common, and one isn’t currently available to the public for the referenced firmware range at this time.\n\n**SHSH Blobs (Blobs):**  A SHSH blob is a digital signature that Apple generates and uses to personalize IPSW firmware files for each iOS device. SHSH blobs are part of Apple's protocol designed to ensure that only trusted software is installed on the device, generally only allowing the newest iOS version to be installable.**Repo:** Jailbreak Repos or repositories contain tweaks and themes developed by jailbreak developers. You can install these tweaks on your jailbroken iPhone via Cydia, Sileo, Zebra and so on.\n\n**Package Manager:** Package managers are used to install, uninstall and modify official and community-made software to customize your device. Sileo is an example of a package manager.\nThey can be considered similar to the iOS App Store, where you can install both free and paid software.\n\n**Tweaks:** Tweaks are typically software packages that can be installed to your device which transform the look and feel of your iOS device. With some exceptions, tweaks usually don't come with an app icon, but rather instead an area in the Settings app to change how the tweak acts. Simpler tweaks might not have these.",
+    "button_links": [
+      {
+        "label": "iOS Jailbreak FAQ",
+        "url": "https://ios.cfw.guide/faq/"
+      }
+    ]
+  },
+  {
+    "name": "misaka",
+    "content": "Misaka is a package manager-style user experience app that works as a centralized hub for everyone to download MacDirtyCow and kfd add-ons from.\n\nYou can install Misaka using the perma-signing [TrollStore app](https://discord.com/channels/349243932447604736/688126500834246709/1137532017844682832) or a sideloading method such as the likes of [AltStore](https://discord.com/channels/349243932447604736/688126500834246709/1137532039176925294) or [Sideloadly](https://discord.com/channels/349243932447604736/688126500834246709/1137532054532264077). You don’t need a jailbreak to install and use Misaka.\n\nOnce installed, you can browse through a catalog of MacDirtyCow or kfd-compatible add-ons much like you can search for jailbreak tweaks on jailbroken handset running Cydia, Sileo, Zebra, or some other package manager app.\n\n[Information Source](https://www.idownloadblog.com/2023/07/14/how-to-install-misaka-macdirtycow/)"
+  },
+  {
+    "name": "sidestore",
+    "content": "**Sidestore common issues**\n\n1. **Crashes when completes app refresh:**Remove all SideStore widgets on your home screen and try again\n2. **Unable to Install App From Staging Directory:** Make sure you have WireGuard SideStore profile enabled, and try again. If that doesn’t work, uninstall SideStore, and use AltServer to sideload it (using 0.4.0 nightly could help).\n3. ***The Data is not in the correct format, The data couldn’t be read, Unable to fetch data, Couldn’t fetch client info, Outdated anisette server warning on default server:** The anisette server might be down at the moment, try again later or use a different anisette server\n4. **Unable to connect to the device:** Make sure you have WireGuard SideStore profile enabled, and try again\n5. **Can’t select the pairing file, or errors out after you’ve selected them:** Uninstall SideStore and sideload it under AltServer or SideServer\n6. **Can’t refresh SideStore:** Make sure you’re using the latest version of SideStore. This issue could have caused by a bad anisette server"
+  },
+  {
+    "name": "palera1nshortcut",
+    "content": "Use this tag to force the loader app to open when you may not be able to yourself.",
+    "button_links": [
+      {
+        "label": "Shortcut Link",
+        "url": "https://www.icloud.com/shortcuts/8cd5f489c8854ee0ab9ee38f2e62f87d"
+      }
+    ]
+  },
+  {
+    "name": "whyrootless",
+    "content": "**Why rootless > rootful**:\n- There isn't any storage penalty (such as the 2-5 GB bindfs or 10GB+ fakefs storage penalty) compared to stock iOS\n- Most future development of both tweaks and palera1n will primarily be rootless\n- In general, rootful tends to have more and harder to troubleshoot issues in comparison to rootless\n\nYes, tweak compatibility for older tweaks may be better than rootless, but many older tweaks can be patched in various ways to work with a rootless setup."
+  },
+  {
+    "name": "xy",
+    "content": "https://xyproblem.info/"
+  },
+  {
+    "name": "whyipad",
+    "content": "There are no iPhones in existence that support both the checkm8 exploit and iOS 17, there exists iPads however that support checkm8 and iOS 17."
+  },
+  {
+    "name": "execs",
+    "content": "Secure your spot during an Apple Event\n\nFirst come, first served. Reserve your spot as soon as possible\n\nChange your server pfp to match the name chosen. Accepted pfps can be found in the excel doc\n\nChange your server name to match as well\n\nPing Aaron to reserve a spot\n\nOnce above criteria has been met the role will be given, or ping an admin",
+    "button_links": [
+      {
+        "label": "Exec list",
+        "url": "https://docs.google.com/spreadsheets/d/1HvruO6GiAbKGd3TxeofItJtoS6_2yoZ4msJcWyNdKAw/edit#gid=0"
+      }
+    ]
+  },
+  {
+    "name": "rufus",
+    "content": "If you're having issues booting your ISO after flashing it, make sure you select \"DD mode\" after clicking start.\n\nAlso ensure you're using the amd64 iso if you're on a 64-bit computer."
+  },
+  {
+    "name": "gtacartracker",
+    "content": "GTA Car Tracker is a legitimate and normal app on the App Store. It is used in combination with an installd exploit to install TrollHelper (the app which installs TrollStore) on non-jailbroken devices.\n\nThis app was used since the developer (iCraze) gives permission for it to be redistributed."
+  },
+  {
+    "name": "trollstorestatus",
+    "content": "TrollStore was recently updated to add support for iOS 15.5 - 16.6.1, as well as iOS 17.0. These will likely be the last versions for which TrollStore will ever gain support.\n\nCoreTrust bugs do not come around often (there have only been two that we know of since iOS 14 - TrollStore isn’t actually possible on iOS 13 and below) and as TrollStore relies on such a bug, it is the only way TrollStore could support newer versions.\n\n**Do not expect TrollStore to EVER be updated with newer version support. It is _highly_ unlikely to happen.**\n\nFurthermore, there is no active development ongoing with regards to an iOS 17.0 installation method. Please do not ask for a status update or an ETA."
+  },
+  {
+    "name": "normalreboot",
+    "content": "Safely rebooting your device allows for data to save and the operating system to properly clean up and shut itself down. In order to do so, do one of the following:\n\n- Turn your device off, and then turn it on again\n- Enable AssistiveTouch, and navigate to Device > More > Restart\n- Ask Siri to restart\n\nThese steps won't work if your iPhone is stuck or frozen, or if it's not booted into iOS (ie. if it's in recovery or DFU). See the `reboot` tag for instructions on force rebooting."
+  },
+  {
+    "name": "pacppl",
+    "content": "# PAC/PPL bypasses\nBack in iOS 14 and below, you could jailbreak with just a kernel exploit. However, in iOS 15, Apple introduced new mitigations that meant for A12+ devices, you need more than one exploit for a jailbreak.\n\n**Kernel exploit**\nA kernel exploit allows you to read and write to kernel memory. On A11 and below, this is enough to become root, unsandbox yourself, and have a full jailbreak. On A12+ (for reasons mentioned further down) this is only enough to overwrite files\n\n**PPL bypass**\nPPL (page protection layer) is a system that ensures that you can’t write to important data structures with just kernel memory read and write. In iOS 15.2, Apple put the `ucred` structure behind PPL, which stores information about a process’s privilege level, sandbox and entitlements. Thus, you need a PPL bypass in order to have a jailbreak, as you need to be able to unsandbox yourself and gain root privileges.\n\n**PAC bypass**\nPAC (pointer authentication codes) is a system in which pointers (which are ‘addresses’ to areas of memory) are cryptographically signed, meaning that you can’t manually overwrite pointer values. Its job is to ensure that everything is executed in the order that it was intended to be, and that an attacker can’t arbitrarily call a function in the kernel for their advantage. With a PAC bypass, you can get around this requirement, and can (for example) call an arbitrary kernel function (also known as the ability to kcall). While a PAC bypass is not required, a lot of PPL bypasses require kcall to be exploited, and thus need a PAC bypass.\n\n**SPTM/TXM**\nWith the release of iOS 17, PPL was completely replaced on A15+ devices, as well as on M4 iPads. SPTM (secure page table monitor) and TXM (trusted execution monitor) are two new components which, together, provide a stronger replacement for PPL. SPTM will most likely require a bypass for jailbreaks, and for TXM it’s currently unclear as to whether this needs a bypass. It’s important to note that A12-A14 and M1/M2 devices still have PPL in iOS 17.\n\nIt’s important to note that both PAC and PPL were **introduced in A12**, hence why A11 and below require just a kernel exploit to jailbreak."
+  },
+  {
+    "name": "semijailbreak",
+    "content": "Recently, some tools have come out for certain devices and versions covered by the CoreTrust bypass. These tools claim to be \"semi-jailbreaks\" as opposed to a traditional, \"full\" jailbreak.\n\nThe primary difference is that these semi-jailbreaks do not require any sort of PPL bypass, which is a required exploit on \"full\" jailbreaks in order to run tweaks. As a consequence, this means semi-jailbreaks are **limited to devices only supported by the CoreTrust bypass**. Additionally, they may suffer from a lack of stability and be prone to crashing or random reboots. \n\nFinally, these tools are limited as to what they can modify. While certain Springboard tweaks (such as those that modify the lock screen or home screen) and app tweaks work, **overall tweak compatibility may be limited**. Additionally, tweaks that require the use of daemons (system processes that run in the background) such as Crane and Aemulo **will not work**."
+  },
+  {
+    "name": "becomejbdev",
+    "content": "https://discord.com/channels/349243932447604736/1090168975251492996/1091020729836912770"
+  },
+  {
+    "name": "xp",
+    "content": "(`/xp` to check your level)\n\nlevel 15 - member plus\nlevel 30 - member pro\nlevel 50 - member edition\nlevel 75 - member one\nlevel 100 - member ultra"
+  },
+  {
+    "name": "crashlogs",
+    "content": "* Upload a crashlog:\nGo to Settings -> Privacy -> Analytics and Improvements -> Analytics Data\n\nBottom-most log is the latest log for each app or panic"
+  },
+  {
+    "name": "unbootstrap",
+    "content": "### How to uninstall (Roothide) Bootstrap and Serotonin\n\n1. Disable ALL apps in the App List.\n(This **must** be done as enable apps are patched for tweaks to work with bootstrap and will cause issues if not)\n2. Open the RootHide application (`com.roothide.manager` in Sileo if not installed) and run varClean with **all** files selected.\n(Some apps such as Misaka or other apps installed using trollstore may have files present in this list. Save any files important to you elsewhere such as the Files app.)\n3. Reboot your device and press uninstall in the Bootstrap application.\n\nPlease complete these steps **before** using Dopamine or else you will encounter issues."
+  },
+  {
+    "name": "dopaminefaq",
+    "content": "**Is this compatible with Dopamine 1.0?**\nYes, your setup will migrate when you jailbreak.\n\n**Exploit stuck on devices with 6GB+ RAM**\nFixed in 2.0.5+\n\n**\"Failed to find kernelcache\"**\nBeta, preinstalled, and alternate SU (iOS 15.7 - 15.7.2) versions of iOS require Dopamine to be installed via TrollStore. Install Dopamine via TrollStore and try again\n\n**The app xyz already exists on the system**\nRemove RootHide, Bootstrap and Serotonin **completely**. (See /tag unbootstrap)\nIf you have Sileo installed through TrollStore, remove it.\n\n**Sileo/Zebra not appearing**\nCheck if it is in the App Library. If not, press Reinstall Package Managers in Dopamine settings\nYou can also try Refresh Jailbreak Apps and then Respring\n\n**XPF failure on iOS 15.0/15.0.x**\nFixed in 2.0.1+\n\n**In app update failing**\nKnown issue, install latest ipa/tipa manually\n\n**`Spawning jbctl failed with error code 85`/Getting stuck on initializing jailbreak environment**\nFixed in 2.0.10+\n\n**Restrap bug**\nFixed in 2.0.2+\n\n**I click on Dopamine/TrollStore but it doesn't open**\nGo to the TrollStore persistence helper and Refresh App Registrations\n\n**Stuck in ElleKit safe mode**\nFirst, check Analytics Data and see if there are any SpringBoard crashes. If there are none, please ping @dhinak"
+  },
+  {
+    "name": "shellaccess",
+    "content": "__Changes to shell logins__\n\nWhen you jailbreak for the first time, using a rootless jailbreak, you will be asked to set a password for the `mobile` user.\n\nThis is because logging in as the `root` user directly is deprecated. You must use the `sudo` command to elevate permissions. This also applies for logging in over SSH.\n\n- Running `sudo <command>` will run your command as the root user when authenticated. \n- Running `sudo -i` will give you a shell with root-level permissions.\n\n**This does not mean you can write anywhere in the root filesystem.**\n\nIf you'd like to change this password after it has been set on a rootless jailbreak, run `passwd mobile` in a terminal.\n\nRootful jailbreaks will keep the password as the default (`alpine`) for both accounts. If you'd like to change a specific one, run `passwd <username>`\n\nPlease see `/tag sshsftp` for instructions on how to SSH."
+  },
+  {
+    "name": "derootify",
+    "content": "Derootifier is a tool that allows you to convert rootful (`iphoneos-arm`) debs to rootless (`iphoneos-arm64`). This is especially helpful for tweaks such as rootful themes or tweaks that don't touch the filesystem.\n\nTo obtain a rootful `.deb`, you can add a repository to PostBox by downloading the [PostBox .ipa](https://github.com/PostBox-Team/PostBox-Releases/releases/download/beta-8.1/PostBox-0.8.1-beta.ipa) and adding a rootful repository. Once the repository is added and repositories are refreshed, search for the tweak and press 'Download `.deb` file'.\n\nTo use Derootifier, install the [Derootifier .ipa](https://github.com/haxi0/Derootifier/releases/download/1.3/Derootifier_1.3.ipa) ***WITH TROLLSTORE***, open the `.deb` file downloaded from PostBox from the file picker, and press convert. If Filza (with a URL scheme) is installed, it will open Filza. If not, check `/var/mobile/.Derootifier` for the `arm64` `.deb`. Share the `.deb` to your package manager and install.\n\nDerootifier will not work without proper dependencies. The dependencies are as follows:\n- file\n- fakeroot\n- odcctools\n- ldid\nThese packages are all available through Procursus. If you cannot find `ldid`, search with an L instead of an i.\n\nIf a repository gives an error about not being logged in, ensure you are logged in to the corresponding repositories login page. If the repository gives an error saying unsupported browser / package manager, you may need to spoof the user agent to be that of a package manager.",
+    "button_links": [
+      {
+        "label": "Postbox",
+        "url": "https://github.com/PostBox-Team/PostBox-Releases/releases/download/beta-8.1/PostBox-0.8.1-beta.ipa"
+      },
+      {
+        "label": "Derootifier",
+        "url": "https://github.com/haxi0/Derootifier/releases/download/1.3/Derootifier_1.3.ipa"
+      }
+    ]
+  },
+  {
+    "name": "legacyrootfs",
+    "content": "To revert the jailbreak installation on your device, follow the steps below.\n\n**unc0ver**\nReboot the device then open unc0ver. Tap the gear icon and enable the \"Restore RootFS\" toggle, then tap \"Restore RootFS\" at the main screen.\n\n**Chimera / Odyssey/ Taurine**\nReboot, open Chimera/Odyssey/Taurine, toggle on \"Restore RootFS\", then tap \"Jailbreak\".\n\n**checkra1n / Odysseyra1n**\nOpen the checkra1n app on your home screen and tap \"Restore System\". If the icon has disappeared or you get \"Restore Error: General\", reboot and re-jailbreak.\n\n**palera1n**\nGo to your palera1n folder and type ./palera1n.sh --restorerootfs, then do ./palera1n.sh clean.\n\n**Note:** Since the rootfs is sealed on iOS 15+, it remains the same across all devices. Thus, \"Restore rootfs\" means practically the same thing as \"Remove Jailbreak\""
+  },
+  {
+    "name": "signstatus",
+    "content": "Many websites, including those like https://ipsw.me, have an indicator that a firmware is being signed (able to be restored to without blobs). Unfortunately, these indicators are frequently out of date, inaccurate, or providing blatantly false information (such as certain firmwares being signed despite devices never receiving that version.\n\nThe best and most reliable way to verify if a firmware is signed is by doing it yourself with tools such as tsschecker. This tool makes a direct request to Apple's signing servers, meaning it will be incredibly accurate.",
+    "button_links": [
+      {
+        "label": "<:Link:947344383454367774> tsschecker Link",
+        "url": "https://github.com/1Conan/tsschecker"
+      }
+    ]
+  },
+  {
+    "name": "installts",
+    "content": "How you should install TrollStore varies by device and version. Click on the link below to find out the correct way to install TrollStore on your device.",
+    "button_links": [
+      {
+        "label": "Open the guide",
+        "url": "https://ios.cfw.guide/installing-trollstore/"
+      }
     ]
   }
 ]
