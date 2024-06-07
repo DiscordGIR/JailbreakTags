@@ -281,7 +281,8 @@
   },
   {
     "name": "recovery",
-    "content": "Recovery Mode (not to be confused with DFU Mode) is a mode which allows a device to be reflashed to a fresh install of iOS. You can optionally either keep your data and update to a newer version or restore and start over with a fresh install. \n\n**To restore in Recovery Mode**\n- [Enter Recovery Mode](https://support.apple.com/en-us/HT201263)\n- Connect your device to your PC/Mac and open iTunes/Finder\n- A prompt should appear which says “A device has been connected in recovery mode.” Either select “Restore” or “Update”\n\n**NOTE:** If you use this method you can only restore/updated to a signed version of iOS."
+    "content": "Recovery Mode (not to be confused with DFU Mode) is a mode which allows a device to be reflashed to a fresh install of iOS. You can optionally either keep your data and update to a newer version or restore and start over with a fresh install. \n\n**To restore in Recovery Mode**\n- [Enter Recovery Mode](https://support.apple.com/en-us/HT201263)\n- Connect your device to your PC/Mac and open iTunes/Finder\n- A prompt should appear which says “A device has been connected in recovery mode.” Either select “Restore” or “Update”\n\n**NOTE:** If you use this method you can only restore/updated to a signed version of iOS.",
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/recovery.png"
   },
   {
     "name": "sepbb",
@@ -327,7 +328,8 @@
         "label": "<:Guide:947350624385794079> Fix Untrusted Shortcut",
         "url": "https://www.howtogeek.com/699397/how-to-fix-allow-untrusted-shortcuts-grayed-out-on-iphone-or-ipad/#:~:text=Normally%2C%20when%20you%20want%20to,switch%20under%20%E2%80%9CSharing%20Security.%E2%80%9D"
       }
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/shortcut.png"
   },
   {
     "name": "chimeramoment",
@@ -337,7 +339,8 @@
         "label": "<:Link:947344383454367774> chimera_patch download",
         "url": "https://github.com/staturnzz/chimera_patch"
       }
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/chimeramoment.jpg"
   },
   {
     "name": "sideloadly",
@@ -375,11 +378,13 @@
         "label": "<:Add:947354227171262534> Add NoBetaAlert Repo",
         "url": "https://repos.slim.rocks/repo/?repoUrl=https://parrotgeek.com/repo/"
       }
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/betaalert.png"
   },
   {
     "name": "usbcmoment",
-    "content": "**TLDR:** You'll need a USB-A to Lightning cable.\nUSB-C to USB-A adapters will work fine."
+    "content": "**TLDR:** You'll need a USB-A to Lightning cable.\nUSB-C to USB-A adapters will work fine.",
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/usbcmoment.png"
   },
   {
     "name": "adblock",
@@ -413,7 +418,8 @@
         "label": "<:Guide:947350624385794079> Disabling Real-Time Protection",
         "url": "https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960"
       }
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/antivirus.png"
   },
   {
     "name": "source",
@@ -669,7 +675,8 @@
         "label": "<:Link:947344383454367774> Compatible iOS/watchOS versions",
         "url": "https://legizmo.app/"
       }
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/legizmo.png"
   },
   {
     "name": "tetherdowngrade",
@@ -847,7 +854,8 @@
   },
   {
     "name": "applecdnfail",
-    "content": "Apple has made changes to their CDN that may prevent you from downloading certain IPSW files, most commonly versions that are considered legacy. In order to fix this, you will need to download the IPSW over `http` rather than `https` which can be accomplished by removing the `https://secure-` from the URL."
+    "content": "Apple has made changes to their CDN that may prevent you from downloading certain IPSW files, most commonly versions that are considered legacy. In order to fix this, you will need to download the IPSW over `http` rather than `https` which can be accomplished by removing the `https://secure-` from the URL.",
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/applecdnfail.png"
   },
   {
     "name": "ios17moment",
@@ -913,7 +921,8 @@
         "label": "Shortcut Link",
         "url": "https://www.icloud.com/shortcuts/8cd5f489c8854ee0ab9ee38f2e62f87d"
       }
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/misaka.jpg"
   },
   {
     "name": "whyrootless",
@@ -939,7 +948,8 @@
   },
   {
     "name": "rufus",
-    "content": "If you're having issues booting your ISO after flashing it, make sure you select \"DD mode\" after clicking start.\n\nAlso ensure you're using the amd64 iso if you're on a 64-bit computer."
+    "content": "If you're having issues booting your ISO after flashing it, make sure you select \"DD mode\" after clicking start.\n\nAlso ensure you're using the amd64 iso if you're on a 64-bit computer.",
+    "image": "https://raw.githubusercontent.com/DiscordGIR/JailbreakTags/main/images/rufus.jpg"
   },
   {
     "name": "gtacartracker",
